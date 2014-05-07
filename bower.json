@@ -1,0 +1,25 @@
+{
+	"name": "github-markdown-css",
+	"description": "The minimal amount of CSS to replicate the GitHub Markdown style",
+	"license": "MIT",
+	"main": "github-markdown.css",
+	"keywords": [
+		"github",
+		"markdown",
+		"md",
+		"css",
+		"style",
+		"stylesheet"
+	],
+	"ignore": [
+		"**/.*",
+		"component.json",
+		"package.json",
+		"test.js",
+		"index.js",
+		"cli.js",
+		"index.html",
+		"screenshot.png",
+		"fixture.md"
+	]
+}

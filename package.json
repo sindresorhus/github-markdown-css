@@ -1,0 +1,46 @@
+{
+  "name": "github-markdown-css",
+  "version": "0.0.0",
+  "description": "The minimal amount of CSS to replicate the GitHub Markdown style",
+  "license": "MIT",
+  "repository": "sindresorhus/github-markdown-css",
+  "bin": {
+    "github-markdown-css": "cli.js"
+  },
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "github-markdown.css"
+  ],
+  "keywords": [
+    "cli",
+    "bin",
+    "github",
+    "markdown",
+    "md",
+    "css",
+    "style",
+    "stylesheet"
+  ],
+  "dependencies": {
+    "cheerio": "^0.15.0",
+    "css": "^1.6.0",
+    "got": "^0.2.0",
+    "temp-write": "^0.3.0",
+    "uncss": "^0.8.1"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
