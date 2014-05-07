@@ -1,4 +1,4 @@
-# github-markdown-css [![Build Status](https://travis-ci.org/sindresorhus/github-markdown-css.svg?branch=master)](https://travis-ci.org/sindresorhus/github-markdown-css)
+# github-markdown-css [![Build Status](https://travis-ci.org/sindresorhus/github-markdown-css.svg?branch=gh-pages)](https://travis-ci.org/sindresorhus/github-markdown-css)
 
 > The minimal amount of CSS to replicate the GitHub Markdown style
 
@@ -31,13 +31,16 @@ $ component install sindresorhus/github-markdown-css
 
 ## Usage
 
-Import the `github-markdown.css` file and add a `markdown-body` class to the container of your rendered Markdown and set a width for it. GitHub uses `720px` as width.
+Import the `github-markdown.css` file and add a `markdown-body` class to the container of your rendered Markdown and set a width for it. GitHub uses `790px` width and `30px` padding.
 
 ```html
 <link rel="stylesheet" href="github-markdown.css">
 <style>
 	.markdown-body {
-		width: 720px;
+		min-width: 200px;
+		max-width: 790px;
+		margin: 0 auto;
+		padding: 30px;
 	}
 </style>
 <article class="markdown-body">
