@@ -76,9 +76,11 @@ $ npm install --global github-markdown-css
 
 ```sh
 $ github-markdown-css --help
+```
 
-Usage
-  $ github-markdown-css > <filename>
+Usage:
+```sh
+$ github-markdown-css > <filename>
 ```
 
 
