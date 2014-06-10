@@ -34,9 +34,9 @@
     "stylesheet"
   ],
   "dependencies": {
-    "cheerio": "^0.15.0",
+    "cheerio": "^0.16.0",
     "css": "^1.6.0",
-    "got": "^0.2.0",
+    "got": "^0.3.0",
     "temp-write": "^0.3.0",
     "uncss": "^0.8.1"
   },
