@@ -1,97 +1,79 @@
-article {
-  display: block;
-}
-
-html {
+.markdown-body {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  margin: 0;
-}
 
-a:focus {
+
+.markdown-body a:focus {
   outline: thin dotted;
 }
 
-a:active,
-a:hover {
+.markdown-body a:active,
+.markdown-body a:hover {
   outline: 0;
 }
 
-h1 {
+.markdown-body h1 {
   font-size: 2em;
   margin: .67em 0;
 }
 
-strong {
+.markdown-body strong {
   font-weight: bold;
 }
 
-hr {
+.markdown-body hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
 
-code,
-pre {
+.markdown-body code,
+.markdown-body pre {
   font-family: monospace, serif;
   font-size: 1em;
 }
 
-img {
+.markdown-body img {
   border: 0;
 }
 
-table {
+.markdown-body table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-body {
+.markdown-body {
   font: 13px Helvetica, arial, freesans, clean, sans-serif;
   line-height: 1.4;
 }
 
-body {
-  min-width: 1020px;
+.markdown-body {
   color: #333333;
-  background-color: #fff;
 }
 
-* {
+.markdown-body * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-::-moz-selection {
-  text-shadow: none;
-  background: rgba(65,131,196,0.4);
-}
-
-::selection {
-  text-shadow: none;
-  background: rgba(65,131,196,0.4);
-}
-
-a {
+.markdown-body a {
   color: #4183c4;
   text-decoration: none;
 }
 
-a:hover {
+.markdown-body a:hover {
   text-decoration: underline;
 }
 
-a:focus,
-a:active {
+.markdown-body a:focus,
+.markdown-body a:active {
   text-decoration: underline;
 }
 
-hr {
+.markdown-body hr {
   height: 0;
   margin: 15px 0;
   overflow: hidden;
@@ -100,77 +82,77 @@ hr {
   border-bottom: 1px solid #ddd;
 }
 
-hr:before,
-hr:after {
+.markdown-body hr:before,
+.markdown-body hr:after {
   content: " ";
   display: table;
 }
 
-hr:after {
+.markdown-body hr:after {
   clear: both;
 }
 
-ol ol {
+.markdown-body ol ol {
   list-style-type: lower-roman;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
   margin-top: 15px;
   margin-bottom: 15px;
   line-height: 1.1;
 }
 
-h1 {
+.markdown-body h1 {
   font-size: 30px;
 }
 
-h2 {
+.markdown-body h2 {
   font-size: 21px;
 }
 
-h3 {
+.markdown-body h3 {
   font-size: 16px;
 }
 
-h4 {
+.markdown-body h4 {
   font-size: 14px;
 }
 
-h5 {
+.markdown-body h5 {
   font-size: 12px;
 }
 
-h6 {
+.markdown-body h6 {
   font-size: 11px;
 }
 
-blockquote {
+.markdown-body blockquote {
   margin: 0;
 }
 
-ul,
-ol {
+.markdown-body ul,
+.markdown-body ol {
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-dd {
+.markdown-body dd {
   margin-left: 0;
 }
 
-code,
-pre {
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+.markdown-body code,
+.markdown-body pre {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 12px;
 }
 
-pre {
+.markdown-body pre {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -393,271 +375,271 @@ pre {
   content: normal;
 }
 
-.highlight {
+.markdown-body .highlight {
   background: #ffffff;
 }
 
-.highlight .c {
+.markdown-body .highlight .c {
   color: #999988;
   font-style: italic;
 }
 
-.highlight .err {
+.markdown-body .highlight .err {
   color: #a61717;
   background-color: #e3d2d2;
 }
 
-.highlight .k {
+.markdown-body .highlight .k {
   font-weight: bold;
 }
 
-.highlight .o {
+.markdown-body .highlight .o {
   font-weight: bold;
 }
 
-.highlight .cm {
+.markdown-body .highlight .cm {
   color: #999988;
   font-style: italic;
 }
 
-.highlight .cp {
+.markdown-body .highlight .cp {
   color: #999999;
   font-weight: bold;
 }
 
-.highlight .c1 {
+.markdown-body .highlight .c1 {
   color: #999988;
   font-style: italic;
 }
 
-.highlight .cs {
+.markdown-body .highlight .cs {
   color: #999999;
   font-weight: bold;
   font-style: italic;
 }
 
-.highlight .gd {
+.markdown-body .highlight .gd {
   color: #000000;
   background-color: #ffdddd;
 }
 
-.highlight .gd .x {
+.markdown-body .highlight .gd .x {
   color: #000000;
   background-color: #ffaaaa;
 }
 
-.highlight .ge {
+.markdown-body .highlight .ge {
   font-style: italic;
 }
 
-.highlight .gr {
+.markdown-body .highlight .gr {
   color: #aa0000;
 }
 
-.highlight .gh {
+.markdown-body .highlight .gh {
   color: #999999;
 }
 
-.highlight .gi {
+.markdown-body .highlight .gi {
   color: #000000;
   background-color: #ddffdd;
 }
 
-.highlight .gi .x {
+.markdown-body .highlight .gi .x {
   color: #000000;
   background-color: #aaffaa;
 }
 
-.highlight .go {
+.markdown-body .highlight .go {
   color: #888888;
 }
 
-.highlight .gp {
+.markdown-body .highlight .gp {
   color: #555555;
 }
 
-.highlight .gs {
+.markdown-body .highlight .gs {
   font-weight: bold;
 }
 
-.highlight .gu {
+.markdown-body .highlight .gu {
   color: #800080;
   font-weight: bold;
 }
 
-.highlight .gt {
+.markdown-body .highlight .gt {
   color: #aa0000;
 }
 
-.highlight .kc {
+.markdown-body .highlight .kc {
   font-weight: bold;
 }
 
-.highlight .kd {
+.markdown-body .highlight .kd {
   font-weight: bold;
 }
 
-.highlight .kn {
+.markdown-body .highlight .kn {
   font-weight: bold;
 }
 
-.highlight .kp {
+.markdown-body .highlight .kp {
   font-weight: bold;
 }
 
-.highlight .kr {
+.markdown-body .highlight .kr {
   font-weight: bold;
 }
 
-.highlight .kt {
+.markdown-body .highlight .kt {
   color: #445588;
   font-weight: bold;
 }
 
-.highlight .m {
+.markdown-body .highlight .m {
   color: #009999;
 }
 
-.highlight .s {
+.markdown-body .highlight .s {
   color: #dd1144;
 }
 
-.highlight .n {
+.markdown-body .highlight .n {
   color: #333333;
 }
 
-.highlight .na {
+.markdown-body .highlight .na {
   color: teal;
 }
 
-.highlight .nb {
+.markdown-body .highlight .nb {
   color: #0086b3;
 }
 
-.highlight .nc {
+.markdown-body .highlight .nc {
   color: #445588;
   font-weight: bold;
 }
 
-.highlight .no {
+.markdown-body .highlight .no {
   color: teal;
 }
 
-.highlight .ni {
+.markdown-body .highlight .ni {
   color: purple;
 }
 
-.highlight .ne {
+.markdown-body .highlight .ne {
   color: #990000;
   font-weight: bold;
 }
 
-.highlight .nf {
+.markdown-body .highlight .nf {
   color: #990000;
   font-weight: bold;
 }
 
-.highlight .nn {
+.markdown-body .highlight .nn {
   color: #555555;
 }
 
-.highlight .nt {
+.markdown-body .highlight .nt {
   color: navy;
 }
 
-.highlight .nv {
+.markdown-body .highlight .nv {
   color: teal;
 }
 
-.highlight .ow {
+.markdown-body .highlight .ow {
   font-weight: bold;
 }
 
-.highlight .w {
+.markdown-body .highlight .w {
   color: #bbbbbb;
 }
 
-.highlight .mf {
+.markdown-body .highlight .mf {
   color: #009999;
 }
 
-.highlight .mh {
+.markdown-body .highlight .mh {
   color: #009999;
 }
 
-.highlight .mi {
+.markdown-body .highlight .mi {
   color: #009999;
 }
 
-.highlight .mo {
+.markdown-body .highlight .mo {
   color: #009999;
 }
 
-.highlight .sb {
+.markdown-body .highlight .sb {
   color: #dd1144;
 }
 
-.highlight .sc {
+.markdown-body .highlight .sc {
   color: #dd1144;
 }
 
-.highlight .sd {
+.markdown-body .highlight .sd {
   color: #dd1144;
 }
 
-.highlight .s2 {
+.markdown-body .highlight .s2 {
   color: #dd1144;
 }
 
-.highlight .se {
+.markdown-body .highlight .se {
   color: #dd1144;
 }
 
-.highlight .sh {
+.markdown-body .highlight .sh {
   color: #dd1144;
 }
 
-.highlight .si {
+.markdown-body .highlight .si {
   color: #dd1144;
 }
 
-.highlight .sx {
+.markdown-body .highlight .sx {
   color: #dd1144;
 }
 
-.highlight .sr {
+.markdown-body .highlight .sr {
   color: #009926;
 }
 
-.highlight .s1 {
+.markdown-body .highlight .s1 {
   color: #dd1144;
 }
 
-.highlight .ss {
+.markdown-body .highlight .ss {
   color: #990073;
 }
 
-.highlight .bp {
+.markdown-body .highlight .bp {
   color: #999999;
 }
 
-.highlight .vc {
+.markdown-body .highlight .vc {
   color: teal;
 }
 
-.highlight .vg {
+.markdown-body .highlight .vg {
   color: teal;
 }
 
-.highlight .vi {
+.markdown-body .highlight .vi {
   color: teal;
 }
 
-.highlight .il {
+.markdown-body .highlight .il {
   color: #009999;
 }
 
-.highlight .gc {
+.markdown-body .highlight .gc {
   color: #999;
   background-color: #EAF2F5;
 }

@@ -46,9 +46,31 @@ function cleanupCss(str) {
 			return false;
 		}
 
-		if (el.type === 'rule' && /::-webkit-validation|:-moz-placeholder|^\.integrations-slide-content|^\.prose-diff|@font-face|^\.octicon|^button::|^\.markdown-body .+(:hover|\.octicon)/.test(el.selectors[0])) {
+		if (el.type === 'rule' && /::-webkit-validation|:-moz-placeholder|^\.integrations-slide-content|^\.prose-diff|@font-face|^\.octicon|^button::|^\.markdown-body .+(:hover|\.octicon)|^article$/.test(el.selectors[0])) {
 			return false;
 		}
+
+		if (el.selectors.length === 1 && /^(?:html|body)$/.test(el.selectors[0])) {
+			el.declarations = el.declarations.filter(function (declaration) {
+				if (!/^font|^(?:line-height|color)$|text-size-adjust$/.test(declaration.property)) {
+					return false;
+				}
+
+				return true;
+			});
+		}
+
+		el.selectors = el.selectors.map(function (selector) {
+			if (/^(?:body|html)$/.test(selector)) {
+				selector = '.markdown-body';
+			}
+
+			if (!/\.markdown-body/.test(selector)) {
+				selector = '.markdown-body ' + selector;
+			}
+
+			return selector;
+		});
 
 		return true;
 	});
