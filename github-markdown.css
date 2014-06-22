@@ -2,6 +2,13 @@
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font: 13px Helvetica, arial, freesans, clean, sans-serif;
+  line-height: 1.4;
+  color: #333333;
+  font-size: 15px;
+  line-height: 1.7;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 .markdown-body a {
@@ -50,15 +57,6 @@
 .markdown-body td,
 .markdown-body th {
   padding: 0;
-}
-
-.markdown-body {
-  font: 13px Helvetica, arial, freesans, clean, sans-serif;
-  line-height: 1.4;
-}
-
-.markdown-body {
-  color: #333333;
 }
 
 .markdown-body * {
@@ -162,13 +160,6 @@
 .markdown-body pre {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.markdown-body {
-  font-size: 15px;
-  line-height: 1.7;
-  overflow: hidden;
-  word-wrap: break-word;
 }
 
 .markdown-body>*:first-child {

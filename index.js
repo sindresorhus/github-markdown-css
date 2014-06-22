@@ -40,6 +40,7 @@ function getRenderedFixture(cb) {
 function cleanupCss(str) {
 	var css = require('css');
 	var style = css.parse(str);
+	var mdBodyProps = [];
 
 	style.stylesheet.rules = style.stylesheet.rules.filter(function (el) {
 		if (el.type === 'keyframes' || el.type === 'comment') {
@@ -60,10 +61,6 @@ function cleanupCss(str) {
 			});
 		}
 
-		if (el.declarations.length === 0) {
-			return false;
-		}
-
 		el.selectors = el.selectors.map(function (selector) {
 			if (/^(?:body|html)$/.test(selector)) {
 				selector = '.markdown-body';
@@ -76,7 +73,24 @@ function cleanupCss(str) {
 			return selector;
 		});
 
+		if (el.declarations.length === 0) {
+			return false;
+		}
+
+		// collect `.markdown-body` rules
+		if (el.selectors.length === 1 && el.selectors[0] === '.markdown-body') {
+			[].push.apply(mdBodyProps, el.declarations);
+			return false;
+		}
+
 		return true;
+	});
+
+	// merge `.markdown-body` rules
+	style.stylesheet.rules.unshift({
+		type: 'rule',
+		selectors: ['.markdown-body'],
+		declarations: mdBodyProps
 	});
 
 	return css.stringify(style);
