@@ -63,7 +63,7 @@ githubMarkdownCss(function (err, css) {
 	}
 
 	console.log(css);
-	//=> article { display: block; } ...
+	//=> .markdown-body { ...
 });
 ```
 
