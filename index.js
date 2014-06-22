@@ -60,6 +60,10 @@ function cleanupCss(str) {
 			});
 		}
 
+		if (el.declarations.length === 0) {
+			return false;
+		}
+
 		el.selectors = el.selectors.map(function (selector) {
 			if (/^(?:body|html)$/.test(selector)) {
 				selector = '.markdown-body';
