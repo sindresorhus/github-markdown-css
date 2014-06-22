@@ -4,8 +4,8 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.markdown-body a:focus {
-  outline: thin dotted;
+.markdown-body a {
+  background: transparent;
 }
 
 .markdown-body a:active,
@@ -13,13 +13,17 @@
   outline: 0;
 }
 
-.markdown-body h1 {
-  font-size: 2em;
-  margin: .67em 0;
-}
-
 .markdown-body strong {
   font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
 }
 
 .markdown-body hr {
@@ -28,19 +32,24 @@
   height: 0;
 }
 
-.markdown-body code,
 .markdown-body pre {
-  font-family: monospace, serif;
-  font-size: 1em;
+  overflow: auto;
 }
 
-.markdown-body img {
-  border: 0;
+.markdown-body code,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
 
 .markdown-body table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
 }
 
 .markdown-body {
