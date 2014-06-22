@@ -12,6 +12,11 @@
     "email": "sindresorhus@gmail.com",
     "url": "http://sindresorhus.com"
   },
+  "contributors": [{
+    "name": "Benjamin Tan",
+    "email": "demoneaux@gmail.com",
+    "url": "http://d10.github.io/"
+  }],
   "engines": {
     "node": ">=0.10.0"
   },
