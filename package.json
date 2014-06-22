@@ -21,7 +21,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "generate": "node cli.js !> github-markdown.css"
   },
   "files": [
     "index.js",
