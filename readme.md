@@ -46,7 +46,7 @@ Import the `github-markdown.css` file and add a `markdown-body` class to the con
 <article class="markdown-body">
 	<h1>Unicorns</h1>
 	<p>All the things</p>
-</div>
+</article>
 ```
 
 
