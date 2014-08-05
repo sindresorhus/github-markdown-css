@@ -1,6 +1,6 @@
 {
   "name": "github-markdown-css",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "The minimal amount of CSS to replicate the GitHub Markdown style",
   "license": "MIT",
   "repository": "sindresorhus/github-markdown-css",
@@ -45,8 +45,8 @@
     "cheerio": "^0.17.0",
     "css": "^2.0.0",
     "got": "^0.3.0",
-    "temp-write": "^0.3.0",
-    "uncss": "^0.8.1"
+    "temp-write": "^0.3.1",
+    "uncss": "^0.8.3"
   },
   "devDependencies": {
     "mocha": "*"
