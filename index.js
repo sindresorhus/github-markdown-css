@@ -2,7 +2,6 @@
 var got = require('got');
 var cheerio = require('cheerio');
 var uncss = require('uncss');
-var tempWrite = require('temp-write');
 
 function getCss(cb) {
 	got('https://github.com', function (err, data) {
@@ -26,14 +25,17 @@ function getCss(cb) {
 }
 
 function getRenderedFixture(cb) {
-	got('https://github.com/sindresorhus/github-markdown-css/blob/gh-pages/fixture.md', function (err, data) {
+	var url = 'https://github.com/sindresorhus/github-markdown-css/blob/gh-pages/fixture.md';
+
+	got(url, function (err, data) {
 		if (err) {
 			return cb(err);
 		}
 
 		var $ = cheerio.load(data);
+		var html = $('.markdown-body').parent().html();
 
-		cb(null, tempWrite.sync($('.markdown-body').parent().html()));
+		cb(null, html);
 	});
 }
 
@@ -99,7 +101,7 @@ function cleanupCss(str) {
 }
 
 module.exports = function (cb) {
-	getRenderedFixture(function (err, fixture) {
+	getRenderedFixture(function (err, html) {
 		if (err) {
 			return cb(err);
 		}
@@ -109,7 +111,7 @@ module.exports = function (cb) {
 				return cb(err);
 			}
 
-			uncss([fixture], {
+			uncss(html, {
 				stylesheets: stylesheets,
 				ignore: [/^\.highlight/]
 			}, function (err, css) {
