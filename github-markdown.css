@@ -191,13 +191,13 @@
 .markdown-body h6 {
   position: relative;
   margin-top: 1em;
+  margin-bottom: 16px;
   font-weight: bold;
   line-height: 1.4;
 }
 
 .markdown-body h1 {
   padding-bottom: 0.3em;
-  margin-bottom: 16px;
   font-size: 2.25em;
   line-height: 1.2;
   border-bottom: 1px solid #eee;
@@ -205,30 +205,25 @@
 
 .markdown-body h2 {
   padding-bottom: 0.3em;
-  margin-bottom: 16px;
   font-size: 1.75em;
   line-height: 1.225;
   border-bottom: 1px solid #eee;
 }
 
 .markdown-body h3 {
-  margin-bottom: 0;
   font-size: 1.5em;
   line-height: 1.43;
 }
 
 .markdown-body h4 {
-  margin-bottom: 0.1em;
   font-size: 1.25em;
 }
 
 .markdown-body h5 {
-  margin-bottom: 0.2em;
   font-size: 1em;
 }
 
 .markdown-body h6 {
-  margin-bottom: 0.2em;
   font-size: 1em;
   color: #777;
 }
@@ -261,6 +256,10 @@
 .markdown-body ol ul {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
 }
 
 .markdown-body dl {
@@ -331,7 +330,7 @@
   padding-bottom: 0.2em;
   margin: 0;
   font-size: 85%;
-  background-color: #f7f7f7;
+  background-color: rgba(0,0,0,0.04);
   border-radius: 3px;
 }
 
@@ -350,6 +349,10 @@
   border: 0;
 }
 
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
 .markdown-body .highlight pre,
 .markdown-body pre {
   padding: 16px;
@@ -358,6 +361,10 @@
   line-height: 1.45;
   background-color: #f7f7f7;
   border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
 }
 
 .markdown-body pre {
