@@ -6,7 +6,8 @@ var uncss = require('uncss');
 function getCss(cb) {
 	got('https://github.com', function (err, data) {
 		if (err) {
-			return cb(err);
+			cb(err);
+			return;
 		}
 
 		var ret = [];
@@ -17,7 +18,8 @@ function getCss(cb) {
 		});
 
 		if (ret.length === 0) {
-			return cb(new Error('Could not find GitHub stylesheets'));
+			cb(new Error('Could not find GitHub stylesheets'));
+			return;
 		}
 
 		cb(null, ret);
@@ -29,7 +31,8 @@ function getRenderedFixture(cb) {
 
 	got(url, function (err, data) {
 		if (err) {
-			return cb(err);
+			cb(err);
+			return;
 		}
 
 		var $ = cheerio.load(data);
@@ -103,12 +106,14 @@ function cleanupCss(str) {
 module.exports = function (cb) {
 	getRenderedFixture(function (err, html) {
 		if (err) {
-			return cb(err);
+			cb(err);
+			return;
 		}
 
 		getCss(function (err, stylesheets) {
 			if (err) {
-				return cb(err);
+				cb(err);
+				return;
 			}
 
 			uncss(html, {

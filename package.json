@@ -4,13 +4,13 @@
   "description": "The minimal amount of CSS to replicate the GitHub Markdown style",
   "license": "MIT",
   "repository": "sindresorhus/github-markdown-css",
-  "bin": {
-    "github-markdown-css": "cli.js"
-  },
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "http://sindresorhus.com"
+  },
+  "bin": {
+    "github-markdown-css": "cli.js"
   },
   "contributors": [
     {
