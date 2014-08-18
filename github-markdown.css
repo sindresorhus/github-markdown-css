@@ -6,7 +6,7 @@
   line-height: 1.4;
   color: #333333;
   overflow: hidden;
-  font-family: "Helvetica Neue", Helvetica, Arial, freesans, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   word-wrap: break-word;
@@ -297,6 +297,8 @@
   display: block;
   width: 100%;
   overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
 }
 
 .markdown-body table th {
@@ -344,6 +346,7 @@
   padding: 0;
   margin: 0;
   font-size: 100%;
+  word-break: normal;
   white-space: pre;
   background: transparent;
   border: 0;
@@ -365,6 +368,7 @@
 
 .markdown-body .highlight pre {
   margin-bottom: 0;
+  word-break: normal;
 }
 
 .markdown-body pre {
