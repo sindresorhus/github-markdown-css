@@ -24,10 +24,6 @@ $ npm install --save github-markdown-css
 $ bower install --save github-markdown-css
 ```
 
-```sh
-$ component install sindresorhus/github-markdown-css
-```
-
 
 ## Usage
 
