@@ -88,7 +88,6 @@
   box-sizing: border-box;
 }
 
-.markdown-body,
 .markdown-body input {
   font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.4;

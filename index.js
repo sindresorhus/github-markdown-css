@@ -57,13 +57,19 @@ function cleanupCss(str) {
 				return false;
 			}
 
+			// remove `body` from `body, input {}`
+			if (el.selectors[0] === 'body' && el.selectors[1] === 'input') {
+				el.selectors.shift();
+			}
+
 			if (el.selectors.length === 1 && /^(?:html|body)$/.test(el.selectors[0])) {
 				el.declarations = el.declarations.filter(function (declaration) {
-					if (!/^font|^(?:line-height|color)$|text-size-adjust$/.test(declaration.property)) {
-						return false;
+					// remove everything from body/html other than these
+					if (/^font|^(?:line-height|color)$|text-size-adjust$/.test(declaration.property)) {
+						return true;
 					}
 
-					return true;
+					return false;
 				});
 			}
 
@@ -71,6 +77,7 @@ function cleanupCss(str) {
 				if (/^(?:body|html)$/.test(selector)) {
 					selector = '.markdown-body';
 				}
+
 
 				if (!/\.markdown-body/.test(selector)) {
 					selector = '.markdown-body ' + selector;
