@@ -62,6 +62,17 @@ function cleanupCss(str) {
 				el.selectors.shift();
 			}
 
+			// rename the .octoicons font
+			if (el.selectors[0] === '.octicon') {
+				el.declarations = el.declarations.map(function (el) {
+					if (el.property === 'font') {
+						el.value += '-anchor';
+					}
+
+					return el;
+				});
+			}
+
 			if (el.selectors.length === 1 && /^(?:html|body)$/.test(el.selectors[0])) {
 				el.declarations = el.declarations.filter(function (declaration) {
 					// remove everything from body/html other than these
@@ -77,7 +88,6 @@ function cleanupCss(str) {
 				if (/^(?:body|html)$/.test(selector)) {
 					selector = '.markdown-body';
 				}
-
 
 				if (!/\.markdown-body/.test(selector)) {
 					selector = '.markdown-body ' + selector;

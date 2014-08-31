@@ -748,7 +748,7 @@
 }
 
 .markdown-body .octicon {
-  font: normal normal 16px octicons;
+  font: normal normal 16px octicons-anchor;
   line-height: 1;
   display: inline-block;
   text-decoration: none;
