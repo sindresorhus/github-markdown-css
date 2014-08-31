@@ -2,8 +2,6 @@
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  line-height: 1.4;
   color: #333333;
   overflow: hidden;
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
@@ -45,9 +43,29 @@
 }
 
 .markdown-body code,
+.markdown-body kbd,
 .markdown-body pre {
   font-family: monospace, monospace;
   font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
 }
 
 .markdown-body table {
@@ -63,6 +81,12 @@
 .markdown-body * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.markdown-body,
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
 }
 
 .markdown-body a {
@@ -141,8 +165,16 @@
   margin-bottom: 0;
 }
 
-.markdown-body ol ol {
+.markdown-body ol ol,
+.markdown-body ul ol {
   list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
 }
 
 .markdown-body dd {
@@ -158,6 +190,21 @@
 .markdown-body pre {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
 }
 
 .markdown-body>*:first-child {
@@ -252,6 +299,8 @@
   padding-left: 2em;
 }
 
+.markdown-body ul ul,
+.markdown-body ul ol,
 .markdown-body ol ol,
 .markdown-body ol ul {
   margin-top: 0;
@@ -659,4 +708,17 @@
 .markdown-body .highlight .gc {
   color: #999;
   background-color: #EAF2F5;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item-checkbox {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
 }
