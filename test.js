@@ -1,6 +1,6 @@
 'use strict';
 var assert = require('assert');
-var githubMarkdownCss = require('./index');
+var githubMarkdownCss = require('./');
 
 it('should get the GitHub Markdown CSS', function (cb) {
 	this.timeout(20000);
