@@ -689,7 +689,7 @@
   margin-top: 3px;
 }
 
-.markdown-body .task-list-item-checkbox {
+.markdown-body .task-list-item input {
   float: left;
   margin: 0.3em 0 0.25em -1.6em;
   vertical-align: middle;

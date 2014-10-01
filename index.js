@@ -57,6 +57,11 @@ function cleanupCss(str) {
 				return false;
 			}
 
+			// work around GitHub Markdown API inconsistency #10
+			if (el.selectors[0] === '.task-list-item-checkbox') {
+				el.selectors[0] = '.task-list-item input';
+			}
+
 			// remove `body` from `body, input {}`
 			if (el.selectors[0] === 'body' && el.selectors[1] === 'input') {
 				el.selectors.shift();
