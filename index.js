@@ -76,7 +76,7 @@ function cleanupCss(str) {
 			if (el.selectors.length === 1 && /^(?:html|body)$/.test(el.selectors[0])) {
 				el.declarations = el.declarations.filter(function (declaration) {
 					// remove everything from body/html other than these
-					if (/^font|^(?:line-height|color)$|text-size-adjust$/.test(declaration.property)) {
+					if (/^(?:line-height|color)$|text-size-adjust$/.test(declaration.property)) {
 						return true;
 					}
 
