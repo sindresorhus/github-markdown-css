@@ -1,8 +1,8 @@
 .markdown-body a:before {
-    content: '[\00a0';
+    content: '[';
 }
 .markdown-body a:after {
-    content: '\00a0]( ' attr(href) ' )';
+    content: '](' attr(href) ')';
 }
  
 .markdown-body strong:before,
@@ -46,14 +46,14 @@
     color: #dddddd;
 }
 
-.markdown-body ul {
+/*.markdown-body ul {
     padding-left: .75em;
     list-style-type: none;
 }
 .markdown-body ul li:before {
     content: '\2217';
     padding-right: .75em;
-}
+}*/
 
 .markdown-body code:before {
     content: '\00a0`';
@@ -62,4 +62,19 @@
 .markdown-body code:after {
     content: '`\00a0';
     vertical-align: text-top;
+}
+
+.markdown-body u {
+    text-decoration: none;
+    padding-bottom: .1em;
+    border-bottom: .1em solid;
+}
+.markdown-body u:before,
+.markdown-body u:after {
+    content: '_';
+}
+
+.markdown-body em:before,
+.markdown-body em:after {
+    content: '/';
 }
