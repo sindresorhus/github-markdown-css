@@ -195,18 +195,21 @@
   font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
-.markdown-body kbd {
-  background-color: #e7e7e7;
-  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
-  background-image: linear-gradient(#fefefe, #e7e7e7);
-  background-repeat: repeat-x;
-  border-radius: 2px;
-  border: 1px solid #cfcfcf;
-  color: #000;
-  padding: 3px 5px;
-  line-height: 10px;
-  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+.markdown-body .octicon {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
   display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
 }
 
 .markdown-body>*:first-child {
@@ -262,7 +265,6 @@
 .markdown-body h4:hover .anchor,
 .markdown-body h5:hover .anchor,
 .markdown-body h6:hover .anchor {
-  height: 1em;
   padding-left: 8px;
   margin-left: -30px;
   line-height: 1;
@@ -480,6 +482,12 @@
   background: #fff;
 }
 
+.markdown-body .highlight .h {
+  color: #333;
+  font-style: normal;
+  font-weight: normal;
+}
+
 .markdown-body .highlight .mf,
 .markdown-body .highlight .mh,
 .markdown-body .highlight .mi,
@@ -525,7 +533,8 @@
 }
 
 .markdown-body .highlight .cp,
-.markdown-body .highlight .cs {
+.markdown-body .highlight .cs,
+.markdown-body .highlight .cp .h {
   color: #999;
   font-weight: bold;
 }
@@ -664,21 +673,18 @@
   background-color: #EAF2F5;
 }
 
-.markdown-body .octicon {
-  font: normal normal 16px octicons-anchor;
-  line-height: 1;
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
   display: inline-block;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.markdown-body .octicon-link:before {
-  content: '\f05c';
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #000;
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
 }
 
 .markdown-body .task-list-item {
