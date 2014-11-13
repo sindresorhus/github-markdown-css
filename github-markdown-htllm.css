@@ -11,7 +11,7 @@
 }
 
 .markdown-body h1 {
-    border-bottom: 6px double #666666;
+    border-bottom: 0;
 }
 .markdown-body h1:before {
     content: '#\00a0';
@@ -19,7 +19,7 @@
 }
 
 .markdown-body h2 {
-    border-bottom: 2px solid #666666;
+    border-bottom: 0;
 }
 .markdown-body h2:before {
     content: '##\00a0';
@@ -35,14 +35,26 @@
     content: '####\00a0';
     color: #666666;
 }
+.markdown-body h4:after {
+    content: '\00a0####';
+    color: #666666;
+}
  
 .markdown-body h5:before {
     content: '#####\00a0';
     color: #666666;
 }
+.markdown-body h5:after {
+    content: '\00a0#####';
+    color: #666666;
+}
  
 .markdown-body h6:before {
     content: '######\00a0';
+    color: #999999;
+}
+.markdown-body h6:after {
+    content: '\00a0######';
     color: #999999;
 }
 
