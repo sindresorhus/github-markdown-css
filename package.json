@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "generate": "github-markdown-css !> github-markdown-css"
+    "generate": "github-markdown-css !> github-markdown.css"
   },
   "files": [
     "github-markdown.css"
@@ -28,6 +28,6 @@
     "stylesheet"
   ],
   "devDependencies": {
-    "generate-github-markdown-css": "^1.0.0"
+    "generate-github-markdown-css": "^1.0.1"
   }
 }

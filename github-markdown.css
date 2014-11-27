@@ -478,199 +478,116 @@
   content: normal;
 }
 
-.markdown-body .highlight {
-  background: #fff;
+.markdown-body .pl-c {
+  color: #969896;
 }
 
-.markdown-body .highlight .h {
+.markdown-body .pl-c1,
+.markdown-body .pl-mdh,
+.markdown-body .pl-mm,
+.markdown-body .pl-mp,
+.markdown-body .pl-mr,
+.markdown-body .pl-s1 .pl-v,
+.markdown-body .pl-s3,
+.markdown-body .pl-sc,
+.markdown-body .pl-sv {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s1 .pl-s2,
+.markdown-body .pl-smi,
+.markdown-body .pl-smp,
+.markdown-body .pl-stj,
+.markdown-body .pl-vo,
+.markdown-body .pl-vpf {
   color: #333;
-  font-style: normal;
-  font-weight: normal;
 }
 
-.markdown-body .highlight .mf,
-.markdown-body .highlight .mh,
-.markdown-body .highlight .mi,
-.markdown-body .highlight .mo,
-.markdown-body .highlight .il,
-.markdown-body .highlight .m {
-  color: #945277;
+.markdown-body .pl-ent {
+  color: #63a35c;
 }
 
-.markdown-body .highlight .s,
-.markdown-body .highlight .sb,
-.markdown-body .highlight .sc,
-.markdown-body .highlight .sd,
-.markdown-body .highlight .s2,
-.markdown-body .highlight .se,
-.markdown-body .highlight .sh,
-.markdown-body .highlight .si,
-.markdown-body .highlight .sx,
-.markdown-body .highlight .s1 {
+.markdown-body .pl-k,
+.markdown-body .pl-s,
+.markdown-body .pl-st {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s1,
+.markdown-body .pl-s1 .pl-pse .pl-s2,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre,
+.markdown-body .pl-src,
+.markdown-body .pl-v {
   color: #df5000;
 }
 
-.markdown-body .highlight .kc,
-.markdown-body .highlight .kd,
-.markdown-body .highlight .kn,
-.markdown-body .highlight .kp,
-.markdown-body .highlight .kr,
-.markdown-body .highlight .kt,
-.markdown-body .highlight .k,
-.markdown-body .highlight .o {
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
   font-weight: bold;
 }
 
-.markdown-body .highlight .kt {
-  color: #458;
+.markdown-body .pl-ml {
+  color: #693a17;
 }
 
-.markdown-body .highlight .c,
-.markdown-body .highlight .cm,
-.markdown-body .highlight .c1 {
-  color: #998;
-  font-style: italic;
-}
-
-.markdown-body .highlight .cp,
-.markdown-body .highlight .cs,
-.markdown-body .highlight .cp .h {
-  color: #999;
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
   font-weight: bold;
 }
 
-.markdown-body .highlight .cs {
-  font-style: italic;
-}
-
-.markdown-body .highlight .n {
-  color: #333;
-}
-
-.markdown-body .highlight .na,
-.markdown-body .highlight .nv,
-.markdown-body .highlight .vc,
-.markdown-body .highlight .vg,
-.markdown-body .highlight .vi {
+.markdown-body .pl-mq {
   color: #008080;
 }
 
-.markdown-body .highlight .nb {
-  color: #0086B3;
-}
-
-.markdown-body .highlight .nc {
-  color: #458;
-  font-weight: bold;
-}
-
-.markdown-body .highlight .no {
-  color: #094e99;
-}
-
-.markdown-body .highlight .ni {
-  color: #800080;
-}
-
-.markdown-body .highlight .ne {
-  color: #990000;
-  font-weight: bold;
-}
-
-.markdown-body .highlight .nf {
-  color: #945277;
-  font-weight: bold;
-}
-
-.markdown-body .highlight .nn {
-  color: #555;
-}
-
-.markdown-body .highlight .nt {
-  color: #000080;
-}
-
-.markdown-body .highlight .err {
-  color: #a61717;
-  background-color: #e3d2d2;
-}
-
-.markdown-body .highlight .gd {
-  color: #000;
-  background-color: #fdd;
-}
-
-.markdown-body .highlight .gd .x {
-  color: #000;
-  background-color: #faa;
-}
-
-.markdown-body .highlight .ge {
+.markdown-body .pl-mi {
+  color: #333;
   font-style: italic;
 }
 
-.markdown-body .highlight .gr {
-  color: #aa0000;
-}
-
-.markdown-body .highlight .gh {
-  color: #999;
-}
-
-.markdown-body .highlight .gi {
-  color: #000;
-  background-color: #dfd;
-}
-
-.markdown-body .highlight .gi .x {
-  color: #000;
-  background-color: #afa;
-}
-
-.markdown-body .highlight .go {
-  color: #888;
-}
-
-.markdown-body .highlight .gp {
-  color: #555;
-}
-
-.markdown-body .highlight .gs {
+.markdown-body .pl-mb {
+  color: #333;
   font-weight: bold;
 }
 
-.markdown-body .highlight .gu {
-  color: #800080;
+.markdown-body .pl-md,
+.markdown-body .pl-mdhf {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mdht,
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
   font-weight: bold;
 }
 
-.markdown-body .highlight .gt {
-  color: #aa0000;
-}
-
-.markdown-body .highlight .ow {
-  font-weight: bold;
-}
-
-.markdown-body .highlight .w {
-  color: #bbb;
-}
-
-.markdown-body .highlight .sr {
-  color: #017936;
-}
-
-.markdown-body .highlight .ss {
-  color: #8b467f;
-}
-
-.markdown-body .highlight .bp {
-  color: #999;
-}
-
-.markdown-body .highlight .gc {
-  color: #999;
-  background-color: #EAF2F5;
+.markdown-body .pl-mo {
+  color: #1d3e81;
 }
 
 .markdown-body kbd {
@@ -685,155 +602,6 @@
   color: #000;
   border: 1px solid #cfcfcf;
   border-radius: 2px;
-}
-
-.markdown-body .highlight .pl-coc,
-.markdown-body .highlight .pl-entm,
-.markdown-body .highlight .pl-eoa,
-.markdown-body .highlight .pl-mai .pl-sf,
-.markdown-body .highlight .pl-pdv,
-.markdown-body .highlight .pl-sc,
-.markdown-body .highlight .pl-sr,
-.markdown-body .highlight .pl-v,
-.markdown-body .highlight .pl-vpf {
-  color: #0086b3;
-}
-
-.markdown-body .highlight .pl-eoac,
-.markdown-body .highlight .pl-mdht,
-.markdown-body .highlight .pl-mi1,
-.markdown-body .highlight .pl-mri,
-.markdown-body .highlight .pl-va,
-.markdown-body .highlight .pl-vpu {
-  color: #008080;
-}
-
-.markdown-body .highlight .pl-c,
-.markdown-body .highlight .pl-pdc {
-  color: #b4b7b4;
-  font-style: italic;
-}
-
-.markdown-body .highlight .pl-k,
-.markdown-body .highlight .pl-ko,
-.markdown-body .highlight .pl-kolp,
-.markdown-body .highlight .pl-mc,
-.markdown-body .highlight .pl-mr,
-.markdown-body .highlight .pl-ms,
-.markdown-body .highlight .pl-s,
-.markdown-body .highlight .pl-sok,
-.markdown-body .highlight .pl-st {
-  color: #6e5494;
-}
-
-.markdown-body .highlight .pl-ef,
-.markdown-body .highlight .pl-enf,
-.markdown-body .highlight .pl-enm,
-.markdown-body .highlight .pl-entc,
-.markdown-body .highlight .pl-eoi,
-.markdown-body .highlight .pl-sf,
-.markdown-body .highlight .pl-smc {
-  color: #d12089;
-}
-
-.markdown-body .highlight .pl-ens,
-.markdown-body .highlight .pl-eoai,
-.markdown-body .highlight .pl-kos,
-.markdown-body .highlight .pl-mh .pl-pdh,
-.markdown-body .highlight .pl-mp,
-.markdown-body .highlight .pl-pde,
-.markdown-body .highlight .pl-stp {
-  color: #458;
-}
-
-.markdown-body .highlight .pl-enti {
-  color: #d12089;
-  font-weight: bold;
-}
-
-.markdown-body .highlight .pl-cce,
-.markdown-body .highlight .pl-enc,
-.markdown-body .highlight .pl-kou,
-.markdown-body .highlight .pl-mq {
-  color: #f93;
-}
-
-.markdown-body .highlight .pl-mp1 .pl-sf {
-  color: #458;
-  font-weight: bold;
-}
-
-.markdown-body .highlight .pl-cos,
-.markdown-body .highlight .pl-ent,
-.markdown-body .highlight .pl-md,
-.markdown-body .highlight .pl-mdhf,
-.markdown-body .highlight .pl-ml,
-.markdown-body .highlight .pl-pdc1,
-.markdown-body .highlight .pl-pds,
-.markdown-body .highlight .pl-s1,
-.markdown-body .highlight .pl-scp,
-.markdown-body .highlight .pl-sol {
-  color: #df5000;
-}
-
-.markdown-body .highlight .pl-c1,
-.markdown-body .highlight .pl-cn,
-.markdown-body .highlight .pl-pse,
-.markdown-body .highlight .pl-pse .pl-s2,
-.markdown-body .highlight .pl-vi {
-  color: #a31515;
-}
-
-.markdown-body .highlight .pl-mb,
-.markdown-body .highlight .pl-pdb {
-  color: #df5000;
-  font-weight: bold;
-}
-
-.markdown-body .highlight .pl-mi,
-.markdown-body .highlight .pl-pdi {
-  color: #6e5494;
-  font-style: italic;
-}
-
-.markdown-body .highlight .pl-ms1 {
-  background-color: #f5f5f5;
-}
-
-.markdown-body .highlight .pl-mdh,
-.markdown-body .highlight .pl-mdi {
-  font-weight: bold;
-}
-
-.markdown-body .highlight .pl-mdr {
-  color: #0086b3;
-  font-weight: bold;
-}
-
-.markdown-body .highlight .pl-s2 {
-  color: #333;
-}
-
-.markdown-body .highlight .pl-ii {
-  background-color: #df5000;
-  color: #fff;
-}
-
-.markdown-body .highlight .pl-ib {
-  background-color: #f93;
-}
-
-.markdown-body .highlight .pl-id {
-  background-color: #a31515;
-  color: #fff;
-}
-
-.markdown-body .highlight .pl-iu {
-  background-color: #b4b7b4;
-}
-
-.markdown-body .highlight .pl-mo {
-  color: #969896;
 }
 
 .markdown-body .task-list-item {
