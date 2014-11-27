@@ -13,13 +13,7 @@
 	],
 	"ignore": [
 		"**/.*",
-		"component.json",
 		"package.json",
-		"test.js",
-		"index.js",
-		"cli.js",
-		"index.html",
-		"screenshot.png",
-		"fixture.md"
+		"index.html"
 	]
 }

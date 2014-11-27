@@ -9,31 +9,17 @@
     "email": "sindresorhus@gmail.com",
     "url": "http://sindresorhus.com"
   },
-  "bin": {
-    "github-markdown-css": "cli.js"
-  },
-  "contributors": [
-    {
-      "name": "Benjamin Tan",
-      "email": "demoneaux@gmail.com",
-      "url": "http://d10.github.io/"
-    }
-  ],
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha",
-    "generate": "node cli.js !> github-markdown.css"
+    "generate": "github-markdown-css !> github-markdown-css"
   },
   "files": [
-    "index.js",
-    "cli.js",
     "github-markdown.css"
   ],
   "keywords": [
-    "cli",
-    "bin",
+    "browser",
     "github",
     "markdown",
     "md",
@@ -41,13 +27,7 @@
     "style",
     "stylesheet"
   ],
-  "dependencies": {
-    "cheerio": "^0.18.0",
-    "css": "^2.0.0",
-    "got": "^1.0.0",
-    "uncss": "^0.9.0"
-  },
   "devDependencies": {
-    "mocha": "*"
+    "generate-github-markdown-css": "^1.0.0"
   }
 }
