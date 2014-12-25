@@ -617,3 +617,9 @@
   margin: 0.3em 0 0.25em -1.6em;
   vertical-align: middle;
 }
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4183c4;
+}
