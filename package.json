@@ -1,6 +1,6 @@
 {
   "name": "github-markdown-css",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "The minimal amount of CSS to replicate the GitHub Markdown style",
   "license": "MIT",
   "repository": "sindresorhus/github-markdown-css",
