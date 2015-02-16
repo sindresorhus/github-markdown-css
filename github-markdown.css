@@ -37,7 +37,6 @@
 }
 
 .markdown-body hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -68,7 +67,6 @@
 }
 
 .markdown-body input[type="checkbox"] {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
 }
@@ -84,7 +82,6 @@
 }
 
 .markdown-body * {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -430,7 +427,6 @@
 
 .markdown-body img {
   max-width: 100%;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
