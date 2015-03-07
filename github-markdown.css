@@ -217,6 +217,11 @@
   margin-bottom: 0 !important;
 }
 
+.markdown-body a:not(:link):not(:visited) {
+  color: inherit;
+  text-decoration: none;
+}
+
 .markdown-body .anchor {
   position: absolute;
   top: 0;
@@ -428,7 +433,6 @@
 .markdown-body img {
   max-width: 100%;
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
 }
 
 .markdown-body code {
@@ -649,8 +653,7 @@
 }
 
 .markdown-body .task-list-item input {
-  float: left;
-  margin: 0.3em 0 0.25em -1.6em;
+  margin: 0 0.35em 0.25em -1.6em;
   vertical-align: middle;
 }
 
