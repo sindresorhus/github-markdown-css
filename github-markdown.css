@@ -4,8 +4,9 @@
 }
 
 .markdown-body {
-  -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   color: #333;
   overflow: hidden;
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
@@ -15,7 +16,7 @@
 }
 
 .markdown-body a {
-  background: transparent;
+  background-color: transparent;
 }
 
 .markdown-body a:active,
@@ -90,7 +91,7 @@
 }
 
 .markdown-body a {
-  color: #4183c4;
+  color: #4078c0;
   text-decoration: none;
 }
 
@@ -644,5 +645,5 @@
 .markdown-body :checked+.radio-label {
   z-index: 1;
   position: relative;
-  border-color: #4183c4;
+  border-color: #4078c0;
 }
