@@ -5,7 +5,6 @@
 
 .markdown-body {
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   color: #333;
   overflow: hidden;
@@ -191,6 +190,10 @@
   margin-top: 0;
   margin-bottom: 0;
   font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
 }
 
 .markdown-body .octicon {
