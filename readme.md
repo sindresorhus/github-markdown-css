@@ -9,29 +9,26 @@
 
 ## Install
 
-Download [manually](https://raw.githubusercontent.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css) or with a package-manager.
+Download [manually](https://raw.githubusercontent.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css) or with npm:
 
-```sh
-$ npm install --save github-markdown-css
 ```
-
-```sh
-$ bower install --save github-markdown-css
+$ npm install --save github-markdown-css
 ```
 
 
 ## Usage
 
-Import the `github-markdown.css` file and add a `markdown-body` class to the container of your rendered Markdown and set a width for it. GitHub uses `790px` width and `30px` padding.
+Import the `github-markdown.css` file and add a `markdown-body` class to the container of your rendered Markdown and set a width for it. GitHub uses `980px` width and `45px` padding.
 
 ```html
 <link rel="stylesheet" href="github-markdown.css">
 <style>
 	.markdown-body {
+		box-sizing: border-box;
 		min-width: 200px;
-		max-width: 790px;
+		max-width: 980px;
 		margin: 0 auto;
-		padding: 30px;
+		padding: 45px;
 	}
 </style>
 <article class="markdown-body">
