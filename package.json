@@ -9,6 +9,7 @@
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com"
   },
+  "main": "github-markdown.css",
   "engines": {
     "node": ">=0.10.0"
   },
