@@ -45,7 +45,7 @@ See [`generate-github-markdown-css`](https://github.com/sindresorhus/generate-gi
 
 ## Dev
 
-Run `npm run generate` to update the CSS.
+Run `npm run make` to update the CSS.
 
 
 ## License

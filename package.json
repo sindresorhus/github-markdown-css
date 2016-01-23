@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "generate": "github-markdown-css !> github-markdown.css"
+    "make": "github-markdown-css !> github-markdown.css"
   },
   "files": [
     "github-markdown.css"
