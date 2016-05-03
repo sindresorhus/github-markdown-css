@@ -14,7 +14,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "make": "github-markdown-css !> github-markdown.css"
+    "make": "github-markdown-css > github-markdown.css"
   },
   "files": [
     "github-markdown.css"
