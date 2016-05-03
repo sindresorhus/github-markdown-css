@@ -4,8 +4,8 @@
 }
 
 .markdown-body {
+  -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
   color: #333;
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
@@ -15,15 +15,20 @@
 
 .markdown-body a {
   background-color: transparent;
+  -webkit-text-decoration-skip: objects;
 }
 
 .markdown-body a:active,
 .markdown-body a:hover {
-  outline: 0;
+  outline-width: 0;
 }
 
 .markdown-body strong {
-  font-weight: bold;
+  font-weight: inherit;
+}
+
+.markdown-body strong {
+  font-weight: bolder;
 }
 
 .markdown-body h1 {
@@ -32,16 +37,11 @@
 }
 
 .markdown-body img {
-  border: 0;
+  border-style: none;
 }
 
-.markdown-body hr {
-  box-sizing: content-box;
-  height: 0;
-}
-
-.markdown-body pre {
-  overflow: auto;
+.markdown-body svg:not(:root) {
+  overflow: hidden;
 }
 
 .markdown-body code,
@@ -51,28 +51,36 @@
   font-size: 1em;
 }
 
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
 .markdown-body input {
-  color: inherit;
   font: inherit;
   margin: 0;
 }
 
-.markdown-body html input[disabled] {
-  cursor: default;
-}
-
 .markdown-body input {
-  line-height: normal;
+  overflow: visible;
 }
 
-.markdown-body input[type="checkbox"] {
+.markdown-body button:-moz-focusring,
+.markdown-body [type="button"]:-moz-focusring,
+.markdown-body [type="reset"]:-moz-focusring,
+.markdown-body [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.markdown-body [type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
 }
 
 .markdown-body table {
-  border-collapse: collapse;
   border-spacing: 0;
+  border-collapse: collapse;
 }
 
 .markdown-body td,
@@ -85,7 +93,7 @@
 }
 
 .markdown-body input {
-  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 13px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .markdown-body a {
@@ -107,12 +115,12 @@
   border-bottom: 1px solid #ddd;
 }
 
-.markdown-body hr:before {
+.markdown-body hr::before {
   display: table;
   content: "";
 }
 
-.markdown-body hr:after {
+.markdown-body hr::after {
   display: table;
   clear: both;
   content: "";
@@ -124,9 +132,9 @@
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
 }
 
 .markdown-body h1 {
@@ -153,13 +161,18 @@
   font-size: 11px;
 }
 
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 .markdown-body blockquote {
   margin: 0;
 }
 
 .markdown-body ul,
 .markdown-body ol {
-  padding: 0;
+  padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -191,25 +204,36 @@
   font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
-.markdown-body .select::-ms-expand {
+.markdown-body .pl-0 {
+  padding-left: 0 !important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 3px !important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 6px !important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 12px !important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px !important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 36px !important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 48px !important;
+}
+
+.markdown-body .form-select::-ms-expand {
   opacity: 0;
-}
-
-.markdown-body .octicon {
-  font: normal normal normal 16px/1 octicons-link;
-  display: inline-block;
-  text-decoration: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.markdown-body .octicon-link:before {
-  content: '\f05c';
 }
 
 .markdown-body:before {
@@ -636,6 +660,23 @@
   box-shadow: inset 0 -1px 0 #bbb;
 }
 
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+  color: #4078c0;
+  border: 1px solid #4078c0;
+}
+
+.markdown-body :checked+.radio-label {
+  position: relative;
+  z-index: 1;
+  border-color: #4078c0;
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  vertical-align: text-top;
+  fill: currentColor;
+}
+
 .markdown-body .task-list-item {
   list-style-type: none;
 }
@@ -645,12 +686,10 @@
 }
 
 .markdown-body .task-list-item input {
-  margin: 0 0.35em 0.25em -1.6em;
+  margin: 0 0.2em 0.25em -1.6em;
   vertical-align: middle;
 }
 
-.markdown-body :checked+.radio-label {
-  z-index: 1;
-  position: relative;
-  border-color: #4078c0;
+.markdown-body hr {
+  border-bottom-color: #eee;
 }
