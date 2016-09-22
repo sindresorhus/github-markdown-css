@@ -172,13 +172,6 @@
   overflow: visible;
 }
 
-.markdown-body button:-moz-focusring,
-.markdown-body [type="button"]:-moz-focusring,
-.markdown-body [type="reset"]:-moz-focusring,
-.markdown-body [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 .markdown-body [type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
@@ -328,10 +321,6 @@
 .markdown-body input {
   -webkit-font-feature-settings: "liga" 0;
   font-feature-settings: "liga" 0;
-}
-
-.markdown-body .form-select::-ms-expand {
-  opacity: 0;
 }
 
 .markdown-body::before {
@@ -528,8 +517,6 @@
   display: block;
   width: 100%;
   overflow: auto;
-  word-break: normal;
-  word-break: keep-all;
 }
 
 .markdown-body table th {
