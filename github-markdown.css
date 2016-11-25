@@ -521,6 +521,7 @@
 
 .markdown-body table th {
   font-weight: bold;
+  text-align: left;
 }
 
 .markdown-body table th,
