@@ -14,7 +14,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "make": "github-markdown-css > github-markdown.css"
+    "make": "github-markdown-css > github-markdown.css",
+    "minify": "minify github-markdown.css"
   },
   "files": [
     "github-markdown.css"
@@ -30,5 +31,8 @@
   ],
   "devDependencies": {
     "generate-github-markdown-css": "^2.1.0"
+  },
+  "dependencies": {
+    "minifier": "^0.8.1"
   }
 }
