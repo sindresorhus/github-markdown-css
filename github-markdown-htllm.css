@@ -1,0 +1,92 @@
+.markdown-body a:before {
+    content: '[';
+}
+.markdown-body a:after {
+    content: '](' attr(href) ')';
+}
+ 
+.markdown-body strong:before,
+.markdown-body strong:after {
+    content: '**';
+}
+
+.markdown-body h1 {
+    border-bottom: 0;
+}
+.markdown-body h1:before {
+    content: '#\00a0';
+    color: #666666;
+}
+
+.markdown-body h2 {
+    border-bottom: 0;
+}
+.markdown-body h2:before {
+    content: '##\00a0';
+    color: #666666;
+}
+ 
+.markdown-body h3:before {
+    content: '###\00a0';
+    color: #666666;
+}
+ 
+.markdown-body h4:before {
+    content: '####\00a0';
+    color: #666666;
+}
+.markdown-body h4:after {
+    content: '\00a0####';
+    color: #666666;
+}
+ 
+.markdown-body h5:before {
+    content: '#####\00a0';
+    color: #666666;
+}
+.markdown-body h5:after {
+    content: '\00a0#####';
+    color: #666666;
+}
+ 
+.markdown-body h6:before {
+    content: '######\00a0';
+    color: #999999;
+}
+.markdown-body h6:after {
+    content: '\00a0######';
+    color: #999999;
+}
+
+/*.markdown-body ul {
+    padding-left: .75em;
+    list-style-type: none;
+}
+.markdown-body ul li:before {
+    content: '\2217';
+    padding-right: .75em;
+}*/
+
+.markdown-body code:before {
+    content: '\00a0`';
+    vertical-align: text-top;
+}
+.markdown-body code:after {
+    content: '`\00a0';
+    vertical-align: text-top;
+}
+
+.markdown-body u {
+    text-decoration: none;
+    padding-bottom: .1em;
+    border-bottom: .1em solid;
+}
+.markdown-body u:before,
+.markdown-body u:after {
+    content: '_';
+}
+
+.markdown-body em:before,
+.markdown-body em:after {
+    content: '/';
+}
