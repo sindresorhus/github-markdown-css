@@ -15,30 +15,30 @@
 }
 
 .markdown-body .pl-c {
-  color: #969896;
+  color: #6a737d;
 }
 
 .markdown-body .pl-c1,
 .markdown-body .pl-s .pl-v {
-  color: #0086b3;
+  color: #005cc5;
 }
 
 .markdown-body .pl-e,
 .markdown-body .pl-en {
-  color: #795da3;
+  color: #6f42c1;
 }
 
 .markdown-body .pl-smi,
 .markdown-body .pl-s .pl-s1 {
-  color: #333;
+  color: #24292e;
 }
 
 .markdown-body .pl-ent {
-  color: #63a35c;
+  color: #22863a;
 }
 
 .markdown-body .pl-k {
-  color: #a71d5d;
+  color: #d73a49;
 }
 
 .markdown-body .pl-s,
@@ -48,26 +48,26 @@
 .markdown-body .pl-sr .pl-cce,
 .markdown-body .pl-sr .pl-sre,
 .markdown-body .pl-sr .pl-sra {
-  color: #183691;
+  color: #032f62;
 }
 
 .markdown-body .pl-v,
 .markdown-body .pl-smw {
-  color: #ed6a43;
+  color: #e36209;
 }
 
 .markdown-body .pl-bu {
-  color: #b52a1d;
+  color: #b31d28;
 }
 
 .markdown-body .pl-ii {
-  color: #f8f8f8;
-  background-color: #b52a1d;
+  color: #fafbfc;
+  background-color: #b31d28;
 }
 
 .markdown-body .pl-c2 {
-  color: #f8f8f8;
-  background-color: #b52a1d;
+  color: #fafbfc;
+  background-color: #d73a49;
 }
 
 .markdown-body .pl-c2::before {
@@ -76,74 +76,66 @@
 
 .markdown-body .pl-sr .pl-cce {
   font-weight: bold;
-  color: #63a35c;
+  color: #22863a;
 }
 
 .markdown-body .pl-ml {
-  color: #693a17;
+  color: #735c0f;
 }
 
 .markdown-body .pl-mh,
 .markdown-body .pl-mh .pl-en,
 .markdown-body .pl-ms {
   font-weight: bold;
-  color: #1d3e81;
-}
-
-.markdown-body .pl-mq {
-  color: #008080;
+  color: #005cc5;
 }
 
 .markdown-body .pl-mi {
   font-style: italic;
-  color: #333;
+  color: #24292e;
 }
 
 .markdown-body .pl-mb {
   font-weight: bold;
-  color: #333;
+  color: #24292e;
 }
 
 .markdown-body .pl-md {
-  color: #bd2c00;
-  background-color: #ffecec;
+  color: #b31d28;
+  background-color: #ffeef0;
 }
 
 .markdown-body .pl-mi1 {
-  color: #55a532;
-  background-color: #eaffea;
+  color: #22863a;
+  background-color: #f0fff4;
 }
 
 .markdown-body .pl-mc {
-  color: #ef9700;
-  background-color: #ffe3b4;
+  color: #e36209;
+  background-color: #ffebda;
 }
 
 .markdown-body .pl-mi2 {
-  color: #d8d8d8;
-  background-color: #808080;
+  color: #f6f8fa;
+  background-color: #005cc5;
 }
 
 .markdown-body .pl-mdr {
   font-weight: bold;
-  color: #795da3;
-}
-
-.markdown-body .pl-mo {
-  color: #1d3e81;
+  color: #6f42c1;
 }
 
 .markdown-body .pl-ba {
-  color: #595e62;
+  color: #586069;
 }
 
 .markdown-body .pl-sg {
-  color: #c0c0c0;
+  color: #959da5;
 }
 
 .markdown-body .pl-corl {
   text-decoration: underline;
-  color: #183691;
+  color: #032f62;
 }
 
 .markdown-body .octicon {

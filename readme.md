@@ -31,7 +31,7 @@ Import the `github-markdown.css` file and add a `markdown-body` class to the con
 		margin: 0 auto;
 		padding: 45px;
 	}
-	
+
 	@media (max-width: 767px) {
 		.markdown-body {
 			padding: 15px;
