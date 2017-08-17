@@ -15,6 +15,8 @@ Download [manually](https://raw.githubusercontent.com/sindresorhus/github-markdo
 $ npm install --save github-markdown-css
 ```
 
+You may also retrieve it from [CDNJS](https://cdnjs.com/libraries/github-markdown-css).
+
 
 ## Usage
 
