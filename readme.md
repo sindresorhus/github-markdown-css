@@ -9,7 +9,7 @@
 
 ## Install
 
-Download [manually](https://raw.githubusercontent.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css) or with npm:
+Download [manually](https://raw.githubusercontent.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css), from [CDNJS](https://cdnjs.com/libraries/github-markdown-css), or with npm:
 
 ```
 $ npm install --save github-markdown-css
