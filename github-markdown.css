@@ -330,6 +330,7 @@
 .markdown-body code {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 12px;
+	overflow: auto;
 }
 
 .markdown-body pre {
