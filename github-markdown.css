@@ -591,6 +591,14 @@
   background-color: #fff;
 }
 
+.markdown-body img[align=right]{
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left]{
+  padding-right: 20px;
+}
+
 .markdown-body code {
   padding: 0;
   padding-top: 0.2em;
