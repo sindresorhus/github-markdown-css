@@ -12,7 +12,7 @@
 Download [manually](https://raw.githubusercontent.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css), from [CDNJS](https://cdnjs.com/libraries/github-markdown-css), or with npm:
 
 ```
-$ npm install --save github-markdown-css
+$ npm install github-markdown-css
 ```
 
 
@@ -57,4 +57,4 @@ Run `npm run make` to update the CSS.
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
