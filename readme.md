@@ -13,7 +13,7 @@ Make your notes addon look like github markdown. Shameless fork of [this](https:
 Download [manually](https://raw.githubusercontent.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css), from [CDNJS](https://cdnjs.com/libraries/github-markdown-css), or with npm:
 
 ```
-$ npm install github-markdown-css
+$ npm install storybook-addon-notes-github-markdown-css
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ module.exports = (baseConfig, env, config) => {
         target: "index.html",
         parent: "head",
         text:
-          '<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/hipstersmoothie/github-markdown-css/gh-pages/github-markdown.css" />'
+          '<link rel="stylesheet" type="text/css" href="https://unpkg.com/storybook-addon-notes-github-markdown-css@1.0.0/github-markdown.css" />'
       }
     ])
   );
