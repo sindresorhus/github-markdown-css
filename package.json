@@ -1,20 +1,19 @@
 {
   "name": "github-markdown-css",
-  "version": "2.10.0",
-  "description": "The minimal amount of CSS to replicate the GitHub Markdown style",
+  "version": "1.0.0",
+  "description": "Make your notes addon look like github markdown",
   "license": "MIT",
-  "repository": "sindresorhus/github-markdown-css",
+  "repository": "hipstersmoothie/github-markdown-css",
   "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
+    "name": "Andrew Lisowski",
+    "email": "lisowski54@gmail.com"
   },
   "main": "github-markdown.css",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "make": "github-markdown-css > github-markdown.css"
+    "make": "github-markdown-css > github-markdown.css && replace-in-file --configFile=replace-config.js github-markdown.css"
   },
   "files": [
     "github-markdown.css"
@@ -26,9 +25,14 @@
     "md",
     "css",
     "style",
-    "stylesheet"
+    "stylesheet",
+    "storybook",
+    "notes"
   ],
   "devDependencies": {
     "generate-github-markdown-css": "^2.1.0"
+  },
+  "dependencies": {
+    "replace-in-file": "^3.4.2"
   }
 }

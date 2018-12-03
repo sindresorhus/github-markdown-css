@@ -1,11 +1,12 @@
-# github-markdown-css
+# storybook-addon-notes-github-markdown-css
 
 > The minimal amount of CSS to replicate the GitHub Markdown style
+
+Make your notes addon look like github markdown. Shameless fork of [this](https://github.com/sindresorhus/github-markdown-css).
 
 [<img src="https://cloud.githubusercontent.com/assets/170270/5219062/f22a978c-7685-11e4-8316-af25b6c89bc0.png" width="300">](http://sindresorhus.com/github-markdown-css)
 
 ## [Demo](http://sindresorhus.com/github-markdown-css)
-
 
 ## Install
 
@@ -15,45 +16,39 @@ Download [manually](https://raw.githubusercontent.com/sindresorhus/github-markdo
 $ npm install github-markdown-css
 ```
 
-
 ## Usage
 
-Import the `github-markdown.css` file and add a `markdown-body` class to the container of your rendered Markdown and set a width for it. GitHub uses `980px` width and `45px` padding, and `15px` padding for mobile.
+To use within you storybook you need to load the style sheet into the manager's head. The best way I have found to do this is to interact with storybook's html-webpack-plugin. To facilitate this I released [html-webpack-inject-plugin](https://github.com/hipstersmoothie/html-webpack-inject-plugin), it lets you easily inject text into the head or body of the html document.
 
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="github-markdown.css">
-<style>
-	.markdown-body {
-		box-sizing: border-box;
-		min-width: 200px;
-		max-width: 980px;
-		margin: 0 auto;
-		padding: 45px;
-	}
+`webpack.config.js`:
 
-	@media (max-width: 767px) {
-		.markdown-body {
-			padding: 15px;
-		}
-	}
-</style>
-<article class="markdown-body">
-	<h1>Unicorns</h1>
-	<p>All the things</p>
-</article>
+```js
+const HtmlWebpackInsertTextPlugin = require("html-webpack-insert-text-plugin")
+  .default;
+
+module.exports = (baseConfig, env, config) => {
+  config.plugins.push(
+    new HtmlWebpackInsertTextPlugin([
+      {
+        target: "index.html",
+        parent: "head",
+        text:
+          '<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/hipstersmoothie/github-markdown-css/gh-pages/github-markdown.css" />'
+      }
+    ])
+  );
+
+  return config;
+};
 ```
-
 
 ## How
 
 See [`generate-github-markdown-css`](https://github.com/sindresorhus/generate-github-markdown-css) for how it's generated and ability to generate your own.
 
-
 ## Dev
 
 Run `npm run make` to update the CSS.
-
 
 ## License
 
