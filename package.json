@@ -14,7 +14,7 @@
   },
   "scripts": {
     "make": "github-markdown-css > github-markdown.css && replace-in-file --configFile=replace-config.js github-markdown.css",
-    "deploy": "npm run make && auto shipit"
+    "release": "npm run make && auto shipit"
   },
   "files": [
     "github-markdown.css"

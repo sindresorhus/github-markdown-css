@@ -1,0 +1,57 @@
+version: 2
+
+defaults: &defaults
+  working_directory: ~/storybook-addon-notes-github-markdown-css
+  docker:
+    - image: circleci/node:latest-browsers
+
+jobs:
+  install:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            # Find a cache corresponding to this specific package.json checksum
+            # when this file is changed, this key will fail
+            - storybook-addon-notes-github-markdown-css-{{ .Branch }}-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+            - storybook-addon-notes-github-markdown-css-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - storybook-addon-notes-github-markdown-css-{{ .Branch }}
+            # Find the most recent cache used from any branch
+            - storybook-addon-notes-github-markdown-css-master
+            - storybook-addon-notes-github-markdown-css-
+      - run:
+          name: Install Dependencies
+          command: yarn install --frozen-lockfile
+      - save_cache:
+          key: storybook-addon-notes-github-markdown-css-{{ .Branch }}-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+          paths:
+            - node_modules
+            - ~/.cache/yarn
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+
+  release:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/storybook-addon-notes-github-markdown-css
+      - run:
+          name: Release
+          command: yarn release
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - install
+
+      - release:
+          requires:
+            - install
+          filters:
+            branches:
+              only:
+                - master
