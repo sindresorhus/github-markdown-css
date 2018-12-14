@@ -693,3 +693,10 @@
 .markdown-body hr {
   border-bottom-color: #eee;
 }
+
+.markdown-body summary {
+  display: list-item;
+}
+.markdown-body details > summary {
+  cursor: pointer;
+}
