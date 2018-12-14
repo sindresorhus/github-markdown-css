@@ -13,7 +13,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "make": "github-markdown-css > github-markdown.css && replace-in-file --configFile=replace-config.js github-markdown.css"
+    "make": "github-markdown-css > github-markdown.css && replace-in-file --configFile=replace-config.js github-markdown.css",
+    "deploy": "npm run make && auto shipit"
   },
   "files": [
     "github-markdown.css"
@@ -30,6 +31,7 @@
     "notes"
   ],
   "devDependencies": {
+    "auto-release-cli": "^0.23.1",
     "generate-github-markdown-css": "^2.1.0"
   },
   "dependencies": {
