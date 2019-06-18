@@ -44,6 +44,8 @@ Import the `github-markdown.css` file and add a `markdown-body` class to the con
 </article>
 ```
 
+If you want code syntax highlight use GitHub Flavored Markdown generated from [their `/markdown` API](https://developer.github.com/v3/markdown/).
+
 
 ## How
 
