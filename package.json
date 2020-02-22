@@ -4,15 +4,13 @@
 	"description": "The minimal amount of CSS to replicate the GitHub Markdown style",
 	"license": "MIT",
 	"repository": "sindresorhus/github-markdown-css",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"main": "github-markdown.css",
-	"engines": {
-		"node": ">=0.10.0"
-	},
 	"scripts": {
 		"make": "github-markdown-css > github-markdown.css"
 	},
@@ -29,6 +27,6 @@
 		"stylesheet"
 	],
 	"devDependencies": {
-		"generate-github-markdown-css": "^3.0.2"
+		"generate-github-markdown-css": "^4.0.0"
 	}
 }
