@@ -12,7 +12,9 @@
 				max-width: 980px;
 				margin: 0 auto;
 				padding: 45px;
+			
 			}
+					
 		</style>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css">
 		<style>
@@ -20,9 +22,22 @@
 				background-color: #121612;
 			}
 		</style>
-	</head>
+	
+	</head>	
+			
 	<body>
+
+	<div>
+	<input type="checkbox" class="checkbox" id="chk" />
+	<label class="label" for="chk">
+		<i class="fas fa-moon"></i>
+		<i class="fas fa-sun"></i>
+		<div class="ball"></div>
+	</label>
+	</div>
+
 		<article class="markdown-body">
+
 <h1><a id="user-content-github-markdown-css-demo" class="anchor" href="#github-markdown-css-demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Markdown CSS demo</h1>
 
 <p><a name="user-content-headers"></a></p><a name="user-content-headers">
@@ -1855,6 +1870,117 @@ gulp.task(<span class="pl-s"><span class="pl-pds">'</span>default<span class="pl
         .pipe(gulp.dest(<span class="pl-s"><span class="pl-pds">'</span>dist<span class="pl-pds">'</span></span>));
 });</pre></div>
 		</article>
-		<a class="github-fork-ribbon" href="https://github.com/sindresorhus/github-markdown-css" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
-	</body>
+	
+	<a class="github-fork-ribbon" href="https://github.com/sindresorhus/github-markdown-css" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+
+</body>
+<script>
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+	var h1s=document.getElementsByTagName("h1");
+	for (var i = 0; i < h1s.length; i++) {
+    		var h1 = h1s[i];
+   		 h1.classList.toggle('dark');
+		}
+	var h2s=document.getElementsByTagName("h2");
+	for (var i = 0; i < h2s.length; i++) {
+    		var h2 = h2s[i];
+   		 h2.classList.toggle('dark');
+		}
+	var h3s=document.getElementsByTagName("h3");
+	for (var i = 0; i < h3s.length; i++) {
+    		var h3 = h3s[i];
+   		 h3.classList.toggle('dark');
+		}
+	var h4s=document.getElementsByTagName("h4");
+	for (var i = 0; i < h4s.length; i++) {
+    		var h4 = h4s[i];
+   		 h4.classList.toggle('dark');
+		}
+	var h5s=document.getElementsByTagName("h5");
+	for (var i = 0; i < h5s.length; i++) {
+    		var h5 = h5s[i];
+   		 h5.classList.toggle('dark');
+		}
+	var h6s=document.getElementsByTagName("h6");
+	for (var i = 0; i < h6s.length; i++) {
+    		var h6 = h6s[i];
+   		 h6.classList.toggle('dark');
+		}
+	var ps=document.getElementsByTagName("p");
+	for (var i = 0; i < ps.length; i++) {
+    		var p = ps[i];
+   		 p.classList.toggle('dark');
+		}
+	var pres=document.getElementsByTagName("pre");
+	for (var i = 0; i < pres.length; i++) {
+    		var pre = pres[i];
+   		 pre.classList.toggle('dark');
+		}
+	var hrs=document.getElementsByTagName("hr");
+	for (var i = 0; i < hrs.length; i++) {
+    		var hr = hrs[i];
+   		 hr.classList.toggle('dark');
+		}
+	var codes=document.getElementsByTagName("code");
+	for (var i = 0; i < codes.length; i++) {
+    		var code = codes[i];
+   		 code.classList.toggle('dark');
+		}
+	var tables=document.getElementsByTagName("table");
+	for (var i = 0; i < tables.length; i++) {
+    		var table = tables[i];
+   		 table.classList.toggle('dark');
+		}
+	var dls=document.getElementsByTagName("dl");
+	for (var i = 0; i < dls.length; i++) {
+    		var dl = dls[i];
+   		 dl.classList.toggle('dark');
+		}
+	var blockquotes=document.getElementsByTagName("blockquote");
+	for (var i = 0; i < blockquotes.length; i++) {
+    		var blockquote = blockquotes[i];
+		blockquote.classList.toggle('dark');
+	
+   		 
+		}
+	var uls=document.getElementsByTagName("ul");
+	for (var i = 0; i < uls.length; i++) {
+    		var ul = uls[i];
+   		 ul.classList.toggle('dark');
+		}
+	var ols=document.getElementsByTagName("0l");
+	for (var i = 0; i < ols.length; i++) {
+    		var ol = ols[i];
+   		 ol.classList.toggle('dark');
+		}
+	var lis=document.getElementsByTagName("li");
+	for (var i = 0; i < lis.length; i++) {
+    		var li = lis[i];
+   		 li.classList.toggle('dark');
+		}
+	var as=document.getElementsByTagName("a");
+	for (var i = 0; i < as.length; i++) {
+    		var a = as[i];
+   		 a.classList.toggle('dark');
+		}
+	var ulli=document.getElements("ul li");
+	for (var i = 0; i < ulli.length; i++) {
+    		var a = ulli[i];
+   		 a.classList.toggle('dark');
+		}
+	var olli=document.getElements("ol li");
+	for (var i = 0; i < olli.length; i++) {
+    		var a = olli[i];
+		console.log(a);
+   		 a.classList.toggle('dark');
+		}
+	
+	
+	
+	
+});
+</script>
 </html>
