@@ -12,10 +12,15 @@
 	},
 	"main": "github-markdown.css",
 	"scripts": {
-		"make": "github-markdown-css > github-markdown.css"
+		"make:light": "github-markdown-css --type light > github-markdown-light.css",
+		"make:dark": "github-markdown-css --type dark > github-markdown-dark.css",
+		"make:auto": "github-markdown-css --type auto > github-markdown.css",
+		"make": "npm run make:light && npm run make:dark && npm run make:auto"
 	},
 	"files": [
-		"github-markdown.css"
+		"github-markdown.css",
+		"github-markdown-dark.css",
+		"github-markdown-light.css"
 	],
 	"keywords": [
 		"browser",
@@ -27,6 +32,6 @@
 		"stylesheet"
 	],
 	"devDependencies": {
-		"generate-github-markdown-css": "^4.0.0"
+		"generate-github-markdown-css": "^5.0.0"
 	}
 }
