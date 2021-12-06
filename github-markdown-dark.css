@@ -42,6 +42,10 @@
   display: list-item;
 }
 
+.markdown-body [hidden] {
+  display: none !important;
+}
+
 .markdown-body a {
   background-color: transparent;
   color: #58a6ff;
@@ -55,7 +59,6 @@
 
 .markdown-body abbr[title] {
   border-bottom: none;
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
 }
 
@@ -77,7 +80,7 @@
 }
 
 .markdown-body mark {
-  background-color: #ff0;
+  background-color: rgba(187,128,9,0.15);
   color: #c9d1d9;
 }
 
@@ -132,7 +135,16 @@
   border: 0;
 }
 
-.markdown-body html [type=button],
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body [type=button],
 .markdown-body [type=reset],
 .markdown-body [type=submit] {
   -webkit-appearance: button;
@@ -322,19 +334,23 @@
   word-wrap: normal;
 }
 
-.markdown-body :-ms-input-placeholder {
-  color: #484f58;
-  opacity: 1;
-}
-
-.markdown-body ::-ms-input-placeholder {
-  color: #484f58;
-  opacity: 1;
+.markdown-body .octicon {
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
 }
 
 .markdown-body ::placeholder {
   color: #484f58;
   opacity: 1;
+}
+
+.markdown-body input::-webkit-outer-spin-button,
+.markdown-body input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .markdown-body .pl-c {
@@ -891,8 +907,33 @@
   font-family: monospace;
 }
 
-.markdown-body [hidden] {
-  display: none !important;
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item label {
+  font-weight: 400;
+}
+
+.markdown-body .task-list-item.enabled label {
+  cursor: pointer;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item .handle {
+  display: none;
+}
+
+.markdown-body .task-list-item-checkbox {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .contains-task-list:dir(rtl) .task-list-item-checkbox {
+  margin: 0 -1.6em .25em .2em;
 }
 
 .markdown-body ::-webkit-calendar-picker-indicator {
