@@ -216,6 +216,7 @@
   width: max-content;
   max-width: 100%;
   overflow: auto;
+  white-space: nowrap;
 }
 
 .markdown-body td,
