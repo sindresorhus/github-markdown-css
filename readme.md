@@ -46,8 +46,6 @@ Import the `github-markdown.css` file and add a `markdown-body` class to the con
 
 You can use [GitHub's `/markdown` API](https://docs.github.com/en/free-pro-team@latest/rest/reference/markdown) to turn Markdown into the HTML that GitHub generates, which works well with the CSS generated here. Other Markdown parsers will mostly work with these styles too. To mimic how GitHub highlights code, you can use [`starry-night`](https://github.com/wooorm/starry-night) with your Markdown parser of choice.
 
-If you want code syntax highlighted, use GitHub Flavored Markdown rendered from .
-
 There are 3 themes provided in this package:
 
 - **github-markdown.css**: (default) Automatically switches between light and dark through [`@media (prefers-color-scheme)`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme).
