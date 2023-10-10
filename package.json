@@ -11,6 +11,9 @@
 		"url": "https://sindresorhus.com"
 	},
 	"main": "github-markdown.css",
+	"engines": {
+		"node": ">=10"
+	},
 	"scripts": {
 		"make:light": "github-markdown-css --type light > github-markdown-light.css",
 		"make:dark": "github-markdown-css --type dark > github-markdown-dark.css",
@@ -32,6 +35,6 @@
 		"stylesheet"
 	],
 	"devDependencies": {
-		"generate-github-markdown-css": "^5.0.2"
+		"generate-github-markdown-css": "^6.0.1"
 	}
 }
