@@ -146,6 +146,7 @@
 .markdown-body [type=reset],
 .markdown-body [type=submit] {
   -webkit-appearance: button;
+  appearance: button;
 }
 
 .markdown-body [type=checkbox],
@@ -162,6 +163,7 @@
 .markdown-body [type=search]::-webkit-search-cancel-button,
 .markdown-body [type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
+  appearance: none;
 }
 
 .markdown-body ::-webkit-input-placeholder {
@@ -171,6 +173,7 @@
 
 .markdown-body ::-webkit-file-upload-button {
   -webkit-appearance: button;
+  appearance: button;
   font: inherit;
 }
 
@@ -301,7 +304,7 @@
 .markdown-body h6 {
   font-weight: 600;
   font-size: .85em;
-  color: #7d8590;
+  color: #848d97;
 }
 
 .markdown-body p {
@@ -312,7 +315,7 @@
 .markdown-body blockquote {
   margin: 0;
   padding: 0 1em;
-  color: #7d8590;
+  color: #848d97;
   border-left: .25em solid #30363d;
 }
 
@@ -368,32 +371,8 @@
   appearance: none;
 }
 
-.markdown-body .color-fg-accent {
-  color: #2f81f7 !important;
-}
-
-.markdown-body .color-fg-attention {
-  color: #d29922 !important;
-}
-
-.markdown-body .color-fg-done {
-  color: #a371f7 !important;
-}
-
-.markdown-body .flex-items-center {
-  align-items: center !important;
-}
-
-.markdown-body .mb-1 {
-  margin-bottom: var(--base-size-4, 4px) !important;
-}
-
-.markdown-body .text-semibold {
-  font-weight: var(--base-text-weight-medium, 500) !important;
-}
-
-.markdown-body .d-inline-flex {
-  display: inline-flex !important;
+.markdown-body .mr-2 {
+  margin-right: 8px !important;
 }
 
 .markdown-body::before {
@@ -822,7 +801,7 @@
 
 .markdown-body .footnotes {
   font-size: 12px;
-  color: #7d8590;
+  color: #848d97;
   border-top: 1px solid #30363d;
 }
 
@@ -1038,20 +1017,12 @@
   clip: auto;
 }
 
-.markdown-body .QueryBuilder .qb-entity {
-  color: #d2a8ff;
-}
-
-.markdown-body .QueryBuilder .qb-constant {
-  color: #79c0ff;
-}
-
 .markdown-body ::-webkit-calendar-picker-indicator {
   filter: invert(50%);
 }
 
 .markdown-body .markdown-alert {
-  padding: 0 1em;
+  padding: 8px 16px;
   margin-bottom: 16px;
   color: inherit;
   border-left: .25em solid #30363d;
@@ -1065,14 +1036,49 @@
   margin-bottom: 0;
 }
 
+.markdown-body .markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1;
+}
+
 .markdown-body .markdown-alert.markdown-alert-note {
-  border-left-color: #2f81f7;
+  border-left-color: #1f6feb;
+}
+
+.markdown-body .markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: #2f81f7;
 }
 
 .markdown-body .markdown-alert.markdown-alert-important {
-  border-left-color: #a371f7;
+  border-left-color: #8957e5;
+}
+
+.markdown-body .markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: #a371f7;
 }
 
 .markdown-body .markdown-alert.markdown-alert-warning {
-  border-left-color: #d29922;
+  border-left-color: #9e6a03;
+}
+
+.markdown-body .markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: #d29922;
+}
+
+.markdown-body .markdown-alert.markdown-alert-tip {
+  border-left-color: #238636;
+}
+
+.markdown-body .markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: #3fb950;
+}
+
+.markdown-body .markdown-alert.markdown-alert-caution {
+  border-left-color: #da3633;
+}
+
+.markdown-body .markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: #f85149;
 }

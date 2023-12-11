@@ -11,6 +11,7 @@
 		"url": "https://sindresorhus.com"
 	},
 	"main": "github-markdown.css",
+	"sideEffects": false,
 	"engines": {
 		"node": ">=10"
 	},
@@ -35,6 +36,6 @@
 		"stylesheet"
 	],
 	"devDependencies": {
-		"generate-github-markdown-css": "^6.1.0"
+		"generate-github-markdown-css": "^6.2.0"
 	}
 }
