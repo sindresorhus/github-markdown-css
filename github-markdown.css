@@ -112,6 +112,26 @@
   }
 }
 
+:root {
+  --base-size-4: 0.25rem;
+  --base-size-8: 0.5rem;
+  --base-size-12: 0.75rem;
+  --base-size-16: 1rem;
+  --base-size-20: 1.25rem;
+  --base-size-24: 1.5rem;
+  --base-size-28: 1.75rem;
+  --base-size-32: 2rem;
+  --base-size-36: 2.25rem;
+  --base-size-40: 2.5rem;
+  --base-size-44: 2.75rem;
+  --base-size-48: 3rem;
+  --base-size-64: 4rem;
+  --base-size-80: 5rem;
+  --base-size-96: 6rem;
+  --base-size-112: 7rem;
+  --base-size-128: 8rem;
+}
+
 .markdown-body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -1143,6 +1163,10 @@
   margin-top: 0;
 }
 
+.markdown-body .markdown-alert>:first-child svg {
+  margin-right: var(--base-size-8, 8px);
+}
+
 .markdown-body .markdown-alert>:last-child {
   margin-bottom: 0;
 }
@@ -1160,6 +1184,7 @@
 
 .markdown-body .markdown-alert.markdown-alert-note .markdown-alert-title {
   color: var(--color-accent-fg);
+  fill: var(--color-accent-fg);
 }
 
 .markdown-body .markdown-alert.markdown-alert-important {
@@ -1168,6 +1193,7 @@
 
 .markdown-body .markdown-alert.markdown-alert-important .markdown-alert-title {
   color: var(--color-done-fg);
+  fill: var(--color-done-fg);
 }
 
 .markdown-body .markdown-alert.markdown-alert-warning {
@@ -1176,6 +1202,7 @@
 
 .markdown-body .markdown-alert.markdown-alert-warning .markdown-alert-title {
   color: var(--color-attention-fg);
+  fill: var(--color-attention-fg);
 }
 
 .markdown-body .markdown-alert.markdown-alert-tip {
@@ -1184,6 +1211,7 @@
 
 .markdown-body .markdown-alert.markdown-alert-tip .markdown-alert-title {
   color: var(--color-success-fg);
+  fill: var(--color-success-fg);
 }
 
 .markdown-body .markdown-alert.markdown-alert-caution {
@@ -1192,4 +1220,5 @@
 
 .markdown-body .markdown-alert.markdown-alert-caution .markdown-alert-title {
   color: var(--color-danger-fg);
+  fill: var(--color-danger-fg);
 }
