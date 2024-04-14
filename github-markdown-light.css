@@ -1031,6 +1031,10 @@
   margin-top: 0;
 }
 
+.markdown-body .markdown-alert>:first-child svg {
+  margin-right: 0.5rem;
+}
+
 .markdown-body .markdown-alert>:last-child {
   margin-bottom: 0;
 }
@@ -1048,6 +1052,7 @@
 
 .markdown-body .markdown-alert.markdown-alert-note .markdown-alert-title {
   color: #0969da;
+  fill: #0969da;
 }
 
 .markdown-body .markdown-alert.markdown-alert-important {
@@ -1056,6 +1061,7 @@
 
 .markdown-body .markdown-alert.markdown-alert-important .markdown-alert-title {
   color: #8250df;
+  fill: #8250df;
 }
 
 .markdown-body .markdown-alert.markdown-alert-warning {
@@ -1064,6 +1070,7 @@
 
 .markdown-body .markdown-alert.markdown-alert-warning .markdown-alert-title {
   color: #9a6700;
+  fill: #9a6700;
 }
 
 .markdown-body .markdown-alert.markdown-alert-tip {
@@ -1072,6 +1079,7 @@
 
 .markdown-body .markdown-alert.markdown-alert-tip .markdown-alert-title {
   color: #1a7f37;
+  fill: #1a7f37;
 }
 
 .markdown-body .markdown-alert.markdown-alert-caution {
@@ -1080,4 +1088,5 @@
 
 .markdown-body .markdown-alert.markdown-alert-caution .markdown-alert-title {
   color: #d1242f;
+  fill: #d1242f;
 }
