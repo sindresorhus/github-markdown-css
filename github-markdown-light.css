@@ -4,12 +4,13 @@
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   margin: 0;
-  color: #1F2328;
+  color: #1f2328;
   background-color: #ffffff;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
   font-size: 16px;
   line-height: 1.5;
   word-wrap: break-word;
+  scroll-behavior: auto;
 }
 
 .markdown-body .octicon {
@@ -73,12 +74,12 @@
   font-weight: 600;
   padding-bottom: .3em;
   font-size: 2em;
-  border-bottom: 1px solid hsla(210,18%,87%,1);
+  border-bottom: 1px solid #d0d7deb3;
 }
 
 .markdown-body mark {
   background-color: #fff8c5;
-  color: #1F2328;
+  color: #1f2328;
 }
 
 .markdown-body small {
@@ -124,7 +125,7 @@
   box-sizing: content-box;
   overflow: hidden;
   background: transparent;
-  border-bottom: 1px solid hsla(210,18%,87%,1);
+  border-bottom: 1px solid #d0d7deb3;
   height: .25em;
   padding: 0;
   margin: 24px 0;
@@ -181,7 +182,7 @@
 }
 
 .markdown-body ::placeholder {
-  color: #6e7781;
+  color: #636c76;
   opacity: 1;
 }
 
@@ -215,7 +216,7 @@
 }
 
 .markdown-body details:not([open])>*:not(summary) {
-  display: none !important;
+  display: none;
 }
 
 .markdown-body a:focus,
@@ -255,15 +256,15 @@
 .markdown-body kbd {
   display: inline-block;
   padding: 3px 5px;
-  font: 11px ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  font: 11px ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
   line-height: 10px;
-  color: #1F2328;
+  color: #1f2328;
   vertical-align: middle;
   background-color: #f6f8fa;
-  border: solid 1px rgba(175,184,193,0.2);
-  border-bottom-color: rgba(175,184,193,0.2);
+  border: solid 1px #afb8c133;
+  border-bottom-color: #afb8c133;
   border-radius: 6px;
-  box-shadow: inset 0 -1px 0 rgba(175,184,193,0.2);
+  box-shadow: inset 0 -1px 0 #afb8c133;
 }
 
 .markdown-body h1,
@@ -282,7 +283,7 @@
   font-weight: 600;
   padding-bottom: .3em;
   font-size: 1.5em;
-  border-bottom: 1px solid hsla(210,18%,87%,1);
+  border-bottom: 1px solid #d0d7deb3;
 }
 
 .markdown-body h3 {
@@ -303,7 +304,7 @@
 .markdown-body h6 {
   font-weight: 600;
   font-size: .85em;
-  color: #656d76;
+  color: #636c76;
 }
 
 .markdown-body p {
@@ -314,7 +315,7 @@
 .markdown-body blockquote {
   margin: 0;
   padding: 0 1em;
-  color: #656d76;
+  color: #636c76;
   border-left: .25em solid #d0d7de;
 }
 
@@ -344,14 +345,14 @@
 .markdown-body tt,
 .markdown-body code,
 .markdown-body samp {
-  font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
   font-size: 12px;
 }
 
 .markdown-body pre {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
   font-size: 12px;
   word-wrap: normal;
 }
@@ -371,7 +372,7 @@
 }
 
 .markdown-body .mr-2 {
-  margin-right: 8px !important;
+  margin-right: 0.5rem !important;
 }
 
 .markdown-body::before {
@@ -439,7 +440,7 @@
 .markdown-body h4 .octicon-link,
 .markdown-body h5 .octicon-link,
 .markdown-body h6 .octicon-link {
-  color: #1F2328;
+  color: #1f2328;
   vertical-align: middle;
   visibility: hidden;
 }
@@ -581,7 +582,7 @@
 
 .markdown-body table tr {
   background-color: #ffffff;
-  border-top: 1px solid hsla(210,18%,87%,1);
+  border-top: 1px solid #d0d7deb3;
 }
 
 .markdown-body table tr:nth-child(2n) {
@@ -630,7 +631,7 @@
   display: block;
   padding: 5px 0 0;
   clear: both;
-  color: #1F2328;
+  color: #1f2328;
 }
 
 .markdown-body span.align-center {
@@ -700,7 +701,7 @@
   margin: 0;
   font-size: 85%;
   white-space: break-spaces;
-  background-color: rgba(175,184,193,0.2);
+  background-color: #afb8c133;
   border-radius: 6px;
 }
 
@@ -745,7 +746,7 @@
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  color: #1F2328;
+  color: #1f2328;
   background-color: #f6f8fa;
   border-radius: 6px;
 }
@@ -800,7 +801,7 @@
 
 .markdown-body .footnotes {
   font-size: 12px;
-  color: #656d76;
+  color: #636c76;
   border-top: 1px solid #d0d7de;
 }
 
@@ -831,7 +832,7 @@
 }
 
 .markdown-body .footnotes li:target {
-  color: #1F2328;
+  color: #1f2328;
 }
 
 .markdown-body .footnotes .data-footnote-backref g-emoji {
@@ -858,7 +859,7 @@
 }
 
 .markdown-body .pl-ent {
-  color: #116329;
+  color: #0550ae;
 }
 
 .markdown-body .pl-k {
@@ -958,6 +959,20 @@
   color: #0a3069;
 }
 
+.markdown-body [role=button]:focus:not(:focus-visible),
+.markdown-body [role=tabpanel][tabindex="0"]:focus:not(:focus-visible),
+.markdown-body button:focus:not(:focus-visible),
+.markdown-body summary:focus:not(:focus-visible),
+.markdown-body a:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+.markdown-body [tabindex="0"]:focus:not(:focus-visible),
+.markdown-body details-dialog:focus:not(:focus-visible) {
+  outline: none;
+}
+
 .markdown-body g-emoji {
   display: inline-block;
   min-width: 1ch;
@@ -987,7 +1002,7 @@
 }
 
 .markdown-body .task-list-item+.task-list-item {
-  margin-top: 4px;
+  margin-top: 0.25rem;
 }
 
 .markdown-body .task-list-item .handle {
@@ -1021,8 +1036,8 @@
 }
 
 .markdown-body .markdown-alert {
-  padding: 8px 16px;
-  margin-bottom: 16px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
   color: inherit;
   border-left: .25em solid #d0d7de;
 }
@@ -1059,7 +1074,7 @@
 }
 
 .markdown-body .markdown-alert.markdown-alert-warning {
-  border-left-color: #9a6700;
+  border-left-color: #bf8700;
 }
 
 .markdown-body .markdown-alert.markdown-alert-warning .markdown-alert-title {
@@ -1067,7 +1082,7 @@
 }
 
 .markdown-body .markdown-alert.markdown-alert-tip {
-  border-left-color: #1f883d;
+  border-left-color: #1a7f37;
 }
 
 .markdown-body .markdown-alert.markdown-alert-tip .markdown-alert-title {
@@ -1080,4 +1095,8 @@
 
 .markdown-body .markdown-alert.markdown-alert-caution .markdown-alert-title {
   color: #d1242f;
+}
+
+.markdown-body>*:first-child>.heading-element:first-child {
+  margin-top: 0 !important;
 }
