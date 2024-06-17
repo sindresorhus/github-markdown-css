@@ -1,15 +1,18 @@
+.markdown-body {
+  --base-size-4: 0.25rem;
+  --base-size-8: 0.5rem;
+  --base-size-16: 1rem;
+  --base-text-weight-normal: 400;
+  --base-text-weight-medium: 500;
+  --base-text-weight-semibold: 600;
+  --fontStack-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+}
+
 @media (prefers-color-scheme: dark) {
   .markdown-body,
   [data-theme="dark"] {
     /*dark*/
     color-scheme: dark;
-    --fontStack-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
-    --base-text-weight-semibold: 600;
-    --base-text-weight-medium: 500;
-    --base-text-weight-normal: 400;
-    --base-size-16: 1rem;
-    --base-size-8: 0.5rem;
-    --base-size-4: 0.25rem;
     --focus-outlineColor: #1f6feb;
     --fgColor-default: #e6edf3;
     --fgColor-muted: #8d96a0;
@@ -68,13 +71,6 @@
   [data-theme="light"] {
     /*light*/
     color-scheme: light;
-    --fontStack-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
-    --base-text-weight-semibold: 600;
-    --base-text-weight-medium: 500;
-    --base-text-weight-normal: 400;
-    --base-size-16: 1rem;
-    --base-size-8: 0.5rem;
-    --base-size-4: 0.25rem;
     --focus-outlineColor: #0969da;
     --fgColor-default: #1f2328;
     --fgColor-muted: #636c76;
