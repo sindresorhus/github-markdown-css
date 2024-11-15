@@ -3,14 +3,15 @@
   color-scheme: dark;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  margin: 0;
   color: #f0f6fc;
   background-color: #0d1117;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
   font-size: 16px;
-  line-height: 1.5;
   word-wrap: break-word;
-  scroll-behavior: auto !important;
+  margin: 0;
+  min-height: 100vh;
+  line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
 .markdown-body .octicon {
@@ -133,12 +134,12 @@
 }
 
 .markdown-body input {
-  font: inherit;
   margin: 0;
   overflow: visible;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  font: inherit;
 }
 
 .markdown-body [type=button],
@@ -203,6 +204,7 @@
   width: max-content;
   max-width: 100%;
   overflow: auto;
+  font-variant: tabular-nums;
 }
 
 .markdown-body td,
@@ -362,7 +364,6 @@
 .markdown-body input::-webkit-outer-spin-button,
 .markdown-body input::-webkit-inner-spin-button {
   margin: 0;
-  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -834,6 +835,10 @@
   font-family: monospace;
 }
 
+.markdown-body body:has(:modal) {
+  padding-right: var(--dialog-scrollgutter) !important;
+}
+
 .markdown-body .pl-c {
   color: #9198a1;
 }
@@ -1094,5 +1099,33 @@
 
 .markdown-body>*:first-child>.heading-element:first-child {
   margin-top: 0 !important;
+}
+
+.markdown-body ul[role='list'],
+.markdown-body ol[role='list'] {
+  list-style: none;
+}
+
+.markdown-body html[focus-within] {
+  scroll-behavior: smooth;
+}
+
+.markdown-body html:focus-within {
+  scroll-behavior: smooth;
+}
+
+.markdown-body a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+.markdown-body img,
+.markdown-body picture {
+  max-width: 100%;
+  display: block;
+}
+
+.markdown-body [class^=Primer_Brand__Link-module__Link___]::after {
+  width: calc(100% - 20px);
 }
 

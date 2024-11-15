@@ -15,9 +15,9 @@
 		"node": ">=10"
 	},
 	"scripts": {
-		"make:light": "github-markdown-css --type light > github-markdown-light.css",
-		"make:dark": "github-markdown-css --type dark > github-markdown-dark.css",
-		"make:auto": "github-markdown-css --type auto > github-markdown.css",
+		"make:light": "github-markdown-css --no-use-fixture --type light > github-markdown-light.css",
+		"make:dark": "github-markdown-css --no-use-fixture --type dark > github-markdown-dark.css",
+		"make:auto": "github-markdown-css --no-use-fixture --type auto > github-markdown.css",
 		"make": "npm run make:light && npm run make:dark && npm run make:auto"
 	},
 	"files": [
@@ -35,6 +35,6 @@
 		"stylesheet"
 	],
 	"devDependencies": {
-		"generate-github-markdown-css": "^6.4.0"
+		"generate-github-markdown-css": "^6.5.0"
 	}
 }
