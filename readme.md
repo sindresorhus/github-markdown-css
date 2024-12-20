@@ -58,6 +58,17 @@ You may know that now GitHub supports more than 2 themes including `dark_dimmed`
 
 See [`generate-github-markdown-css`](https://github.com/sindresorhus/generate-github-markdown-css) for how it's generated and ability to generate your own.
 
+## Troubleshooting
+
+If you encounter styling issues, like tables in dark mode rendering their fonts in black, the browser might uses [quirks mode](https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode) by accident.
+
+To avoid quirks mode, always include a doctype at the top of your page.
+
+```html
+<!doctype html>
+<html lang="en"><head></head><body></body></html>
+```
+
 ## Dev
 
 Run `npm run make` to update the CSS.
