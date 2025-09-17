@@ -48,7 +48,7 @@ You can use [GitHub's `/markdown` API](https://docs.github.com/en/free-pro-team@
 
 There are 3 themes provided in this package:
 
-- **github-markdown.css**: (default) Automatically switches between light and dark through [`@media (prefers-color-scheme)`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme).
+- **github-markdown.css**: (default) Automatically switches between light and dark through [`@media (prefers-color-scheme)`](https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme).
 - **github-markdown-light.css**: Light-only.
 - **github-markdown-dark.css**: Dark-only.
 
