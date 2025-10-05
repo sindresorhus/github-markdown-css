@@ -1,0 +1,409 @@
+/* Base / root styles */
+body {
+  color: #1f2328;
+  background-color: #ffffff;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* Icons (if used) */
+.octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+/* Headings */
+h1 {
+  margin: .67em 0;
+  font-weight: 600;
+  padding-bottom: .3em;
+  font-size: 2em;
+  border-bottom: 1px solid #d1d9e0b3;
+}
+h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  padding-bottom: .3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid #d1d9e0b3;
+}
+h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.25em;
+}
+h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1em;
+}
+h5 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: .875em;
+}
+h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: .85em;
+  color: #59636e;
+}
+
+/* Anchor links/icons in headings */
+h1:hover .anchor .octicon-link:before,
+h2:hover .anchor .octicon-link:before,
+h3:hover .anchor .octicon-link:before,
+h4:hover .anchor .octicon-link:before,
+h5:hover .anchor .octicon-link:before,
+h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-color: currentColor;
+  /* mask and -webkit-mask using link icon SVG */
+  -webkit-mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+  mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+}
+
+/* Details, figure, figcaption, summary */
+details,
+figcaption,
+figure {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Links */
+a {
+  background-color: transparent;
+  color: #0969da;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline dotted;
+}
+b, strong {
+  font-weight: 600;
+}
+dfn {
+  font-style: italic;
+}
+small {
+  font-size: 90%;
+}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+
+/* Images */
+img {
+  border-style: none;
+  max-width: 100%;
+  box-sizing: content-box;
+}
+img[align=right] {
+  padding-left: 20px;
+}
+img[align=left] {
+  padding-right: 20px;
+}
+
+/* Frames / aligned spans */
+span.frame {
+  display: block;
+  overflow: hidden;
+}
+span.frame > span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid #d1d9e0;
+}
+span.frame span img {
+  display: block;
+  float: left;
+}
+span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: #1f2328;
+}
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+span.align-center > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+span.align-right > span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+span.float-left span {
+  margin: 13px 0 0;
+}
+span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+span.float-right > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+/* Code, tt, pre formatting */
+code, kbd, pre, samp, tt {
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+  font-size: 12px;
+}
+code, tt {
+  padding: .2em .4em;
+  background-color: #818b981f;
+  border-radius: 6px;
+}
+pre code, pre tt {
+  display: inline;
+  max-width: none;
+  padding: 0;
+  margin: 0;
+  word-break: normal;
+  background: transparent;
+  border: 0;
+}
+pre, .highlight pre {
+  margin: 0;
+  padding: 1rem;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 6px;
+}
+.highlight {
+  margin-bottom: 1rem;
+}
+
+/* Tables */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+  font-variant: tabular-nums;
+}
+th, td {
+  padding: 0;
+}
+table th, table td {
+  padding: 6px 13px;
+  border: 1px solid #d1d9e0;
+}
+table tr {
+  background-color: #ffffff;
+  border-top: 1px solid #d1d9e0b3;
+}
+table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+/* Blockquotes, lists, paragraphs, etc. */
+blockquote {
+  margin: 0;
+  padding: 0 1em;
+  color: #59636e;
+  border-left: .25em solid #d1d9e0;
+}
+blockquote > :first-child {
+  margin-top: 0;
+}
+blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 2em;
+}
+ol ol, ul ol {
+  list-style-type: lower-roman;
+}
+ul ul ol, ul ol ol, ol ul ol, ol ol ol {
+  list-style-type: lower-alpha;
+}
+li > p {
+  margin-top: 1rem;
+}
+li + li {
+  margin-top: .25em;
+}
+
+dl {
+  padding: 0;
+}
+dl dt {
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+dl dd {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Misc small rules */
+[tabindex="0"]:focus:not(:focus-visible),
+details-dialog:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+summary:focus:not(:focus-visible),
+a:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+a:focus, [role=button]:focus, input[type=radio]:focus, input[type=checkbox]:focus {
+  outline: 2px solid #0969da;
+  outline-offset: -2px;
+  box-shadow: none;
+}
+a:focus:not(:focus-visible), [role=button]:focus:not(:focus-visible),
+input[type=radio]:focus:not(:focus-visible),
+input[type=checkbox]:focus:not(:focus-visible) {
+  outline: solid 1px transparent;
+}
+a:focus-visible, [role=button]:focus-visible,
+input[type=radio]:focus-visible,
+input[type=checkbox]:focus-visible {
+  outline: 2px solid #0969da;
+  outline-offset: -2px;
+  box-shadow: none;
+}
+
+a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Emoji / g-emoji */
+.g-emoji {
+  display: inline-block;
+  min-width: 1ch;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  font-style: normal !important;
+  font-weight: 400;
+  line-height: 1;
+  vertical-align: -0.075em;
+}
+.g-emoji img {
+  width: 1em;
+  height: 1em;
+}
+
+/* Markdown alert blocks (if you use them) */
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  color: inherit;
+  border-left: .25em solid #d1d9e0;
+}
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1;
+}
+.markdown-alert-note {
+  border-left-color: #0969da;
+}
+.markdown-alert-note .markdown-alert-title {
+  color: #0969da;
+}
+.markdown-alert-important {
+  border-left-color: #8250df;
+}
+.markdown-alert-important .markdown-alert-title {
+  color: #8250df;
+}
+.markdown-alert-warning {
+  border-left-color: #9a6700;
+}
+.markdown-alert-warning .markdown-alert-title {
+  color: #9a6700;
+}
+.markdown-alert-tip {
+  border-left-color: #1a7f37;
+}
+.markdown-alert-tip .markdown-alert-title {
+  color: #1a7f37;
+}
+.markdown-alert-caution {
+  border-left-color: #cf222e;
+}
+.markdown-alert-caution .markdown-alert-title {
+  color: #d1242f;
+}
+
+/* .absent class (if used) */
+.absent {
+  color: #d1242f;
+}
