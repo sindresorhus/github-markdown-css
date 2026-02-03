@@ -37,6 +37,12 @@ Import the `github-markdown.css` file and add a `markdown-body` class to the con
 			padding: 15px;
 		}
 	}
+
+	@media (prefers-color-scheme: dark) {
+		body {
+			background-color: #0d1117;
+		}
+	}
 </style>
 <article class="markdown-body">
 	<h1>Unicorns</h1>
