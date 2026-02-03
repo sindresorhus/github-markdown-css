@@ -46,13 +46,15 @@ Import the `github-markdown.css` file and add a `markdown-body` class to the con
 
 You can use [GitHub's `/markdown` API](https://docs.github.com/en/free-pro-team@latest/rest/reference/markdown) to turn Markdown into the HTML that GitHub generates, which works well with the CSS in this repo. Other Markdown parsers will mostly work with these styles too. To mimic how GitHub highlights code, you can use [`starry-night`](https://github.com/wooorm/starry-night) with your Markdown parser of choice.
 
-There are 3 themes provided in this package:
+There are 7 themes provided in this package:
 
 - **github-markdown.css**: (default) Automatically switches between light and dark through [`@media (prefers-color-scheme)`](https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme).
 - **github-markdown-light.css**: Light-only.
 - **github-markdown-dark.css**: Dark-only.
-
-You may know that now GitHub supports more than 2 themes including `dark_dimmed`, `dark_high_contrast` and `colorblind` variants. If you want to try these themes, you can generate them on your own! See next section.
+- **github-markdown-dark-dimmed.css**: Dark dimmed.
+- **github-markdown-dark-high-contrast.css**: Dark high contrast.
+- **github-markdown-dark-colorblind.css**: Dark Protanopia & Deuteranopia.
+- **github-markdown-light-colorblind.css**: Light Protanopia & Deuteranopia.
 
 ## How
 

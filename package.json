@@ -15,15 +15,23 @@
 		"node": ">=10"
 	},
 	"scripts": {
-		"make:light": "github-markdown-css --no-use-fixture --type light > github-markdown-light.css",
-		"make:dark": "github-markdown-css --no-use-fixture --type dark > github-markdown-dark.css",
-		"make:auto": "github-markdown-css --no-use-fixture --type auto > github-markdown.css",
-		"make": "npm run make:light && npm run make:dark && npm run make:auto"
+		"make:light": "github-markdown-css --no-use-fixture --theme light > github-markdown-light.css",
+		"make:dark": "github-markdown-css --no-use-fixture --theme dark > github-markdown-dark.css",
+		"make:dark-dimmed": "github-markdown-css --no-use-fixture --theme dark_dimmed > github-markdown-dark-dimmed.css",
+		"make:dark-high-contrast": "github-markdown-css --no-use-fixture --theme dark_high_contrast > github-markdown-dark-high-contrast.css",
+		"make:dark-colorblind": "github-markdown-css --no-use-fixture --theme dark_colorblind > github-markdown-dark-colorblind.css",
+		"make:light-colorblind": "github-markdown-css --no-use-fixture --theme light_colorblind > github-markdown-light-colorblind.css",
+		"make:auto": "github-markdown-css --no-use-fixture --theme auto > github-markdown.css",
+		"make": "npm run make:light && npm run make:dark && npm run make:dark-dimmed && npm run make:dark-high-contrast && npm run make:dark-colorblind && npm run make:light-colorblind && npm run make:auto"
 	},
 	"files": [
 		"github-markdown.css",
+		"github-markdown-light.css",
 		"github-markdown-dark.css",
-		"github-markdown-light.css"
+		"github-markdown-dark-dimmed.css",
+		"github-markdown-dark-high-contrast.css",
+		"github-markdown-dark-colorblind.css",
+		"github-markdown-light-colorblind.css"
 	],
 	"keywords": [
 		"browser",
@@ -35,6 +43,6 @@
 		"stylesheet"
 	],
 	"devDependencies": {
-		"generate-github-markdown-css": "^6.5.1"
+		"generate-github-markdown-css": "^6.6.0"
 	}
 }
