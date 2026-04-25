@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Layout Test</title>
+    <link rel="stylesheet" href="github-markdown.css">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #0d1117;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="markdown-body">
+        <h1>Mobile Layout Test</h1>
+        
+        <h2>1. Table Test</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                    <th>Header 4</th>
+                    <th>Header 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cell 1-1</td>
+                    <td>Cell 1-2 with longer content</td>
+                    <td>Cell 1-3</td>
+                    <td>Cell 1-4 with even longer content that should wrap</td>
+                    <td>Cell 1-5</td>
+                </tr>
+                <tr>
+                    <td>Cell 2-1</td>
+                    <td>Cell 2-2</td>
+                    <td>Cell 2-3 with longer content that might cause overflow</td>
+                    <td>Cell 2-4</td>
+                    <td>Cell 2-5</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>2. Code Block Test</h2>
+        <pre><code>function longFunctionNameWithManyParameters(param1, param2, param3, param4, param5, param6, param7, param8) {
+    // This is a long code line that should cause horizontal scrolling on mobile devices
+    console.log('This is a long line of code that will test the horizontal scrolling behavior in code blocks');
+    return param1 + param2 + param3 + param4 + param5 + param6 + param7 + param8;
+}
+
+// Another long line of code to test the scrolling behavior
+const veryLongVariableNameThatShouldCauseHorizontalScrolling = 'This is a very long string that will test the horizontal scrolling behavior in code blocks';</code></pre>
+
+        <h2>3. Image Test</h2>
+        <p>![Test Image](https://picsum.photos/800/400)</p>
+
+        <h2>4. Blockquote Test</h2>
+        <blockquote>
+            <p>This is a long blockquote that should test the layout behavior on mobile devices. It contains multiple sentences to ensure that the blockquote is properly formatted and does not overflow the container.</p>
+            <p>Another paragraph in the blockquote to test the spacing and layout.</p>
+        </blockquote>
+
+        <h2>5. List Test</h2>
+        <ul>
+            <li>First list item with normal length</li>
+            <li>Second list item with longer content that should wrap properly on mobile devices</li>
+            <li>Third list item with even longer content that will test the wrapping behavior in lists</li>
+            <li>Fourth list item with nested list:
+                <ul>
+                    <li>Nested list item 1</li>
+                    <li>Nested list item 2 with longer content</li>
+                    <li>Nested list item 3 with even longer content</li>
+                </ul>
+            </li>
+        </ul>
+    </article>
+</body>
+</html>
